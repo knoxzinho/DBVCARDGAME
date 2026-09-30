@@ -2045,3 +2045,24 @@ A animação de embaralhamento inicial foi retirada da dependência de CSS e pas
 - Animação de compra reforçada, com carta voando do deck até a área da mão em trajetória curva.
 - Embaralhamento inicial refeito como simulação de baralho real: cada carta recebe movimentos, rotações, escalas e alvos aleatórios renovados durante os 3 segundos da preparação.
 - Build atual: 0.58.
+
+## Atualização V59 · Inspeção de decks e novo embaralhamento
+
+- O indicador `👣 AÇÕES` foi renomeado para `👣 MOVIMENTOS`.
+- Clicar no deck principal ou no deck de modificadores abre uma janela de inspeção responsiva com todas as cartas daquele deck em destaque.
+- As cartas podem ser pressionadas e arrastadas visualmente, mas retornam à posição original e não podem alterar a ordem do deck.
+- Duplo clique em uma carta executa uma animação de giro vertical por 2 segundos, funcionando como interação visual/AFK sem modificar o estado da partida.
+- Foi adicionado o comando `EMBARALHAR NOVAMENTE` à inspeção dos decks.
+- O novo embaralhamento respeita intervalo mínimo de 5 rodadas entre usos.
+- O custo começa em ⭐1 e aumenta em ⭐2 a cada uso: ⭐1, ⭐3, ⭐5, ⭐7, etc.
+- O embaralhamento manual apresenta a animação de cartas sendo misturadas antes de devolver o deck ao estado embaralhado.
+- O embaralhamento manual não consome movimentos, apenas estrelas.
+- A contagem e a rodada do último embaralhamento são mantidas no estado da partida.
+
+## Atualização V60 · Inspeção dos decks
+
+- Grade do inspetor de decks reorganizada para manter as cartas alinhadas dentro da área da janela, com rolagem interna quando necessário.
+- A arte do verso usa dimensionamento completo para evitar cortes da imagem.
+- Duplo clique no verso não revela mais a frente da carta.
+- Duplo clique executa uma rotação vertical contínua durante 2 segundos, funcionando como animação de ociosidade da carta.
+- A ordem lógica do deck continua inalterada durante a interação visual.
