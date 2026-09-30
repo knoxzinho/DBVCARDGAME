@@ -2066,3 +2066,11 @@ A animação de embaralhamento inicial foi retirada da dependência de CSS e pas
 - Duplo clique no verso não revela mais a frente da carta.
 - Duplo clique executa uma rotação vertical contínua durante 2 segundos, funcionando como animação de ociosidade da carta.
 - A ordem lógica do deck continua inalterada durante a interação visual.
+
+## Atualização V61 · Deck responsivo
+
+- Janela de inspeção dos decks agora respeita a largura real do modal.
+- Grade responsiva reduz o número de colunas em telas menores.
+- Cartas mantêm proporção quadrada e a arte completa do verso, sem corte.
+- Conteúdo excedente usa rolagem interna, sem ultrapassar a caixa do deck.
+- Build atualizada para 0.61.
