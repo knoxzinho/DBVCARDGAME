@@ -2023,3 +2023,25 @@ As alterações acima são parte da **V53**. O projeto não avança o número da
 - Título do deck de modificadores simplificado para MODIFICADORES.
 - Diário com botão OCULTAR/MOSTRAR funcional, incluindo restauração do estado salvo.
 - Objetivos apresentados em popup responsivo, com grade adaptativa e rolagem interna.
+
+## Atualização V57 · Finalização de jogada e embaralhamento
+
+- O botão de encerramento da rodada foi transformado em uma ação primária explícita: **✓ FINALIZAR JOGADA**.
+- O botão possui área maior, texto descritivo, contraste reforçado e adaptação para telas pequenas.
+- O título/aria-label explica que a ação encerra a jogada e inicia a próxima rodada.
+- Corrigida a cascata CSS que anulava a animação das cartas no modal de embaralhamento. A regra final de V57 tem especificidade superior à regra que colocava `animation:none`.
+- A animação do embaralhamento usa movimento contínuo, escalas e rotações leves, com atraso entre as cartas, durante a sequência de 3 segundos.
+- O verso `assets/card-back.png` continua sendo usado nas cartas.
+- Build: **0.57**.
+
+
+## Atualização V57 · Embaralhamento e cartas
+
+A animação de embaralhamento inicial foi retirada da dependência de CSS e passou a ser controlada diretamente por JavaScript com `requestAnimationFrame`, evitando regras antigas da cascata que poderiam cancelar a animação. As cartas da mão também receberam proteção de visibilidade e o sorteio inicial ganhou uma rotina de entrega robusta para garantir cartas válidas na mão.
+
+
+## Atualização V58 · Compras e animações
+- Texto da compra de cartas resumido para uma leitura mais rápida.
+- Animação de compra reforçada, com carta voando do deck até a área da mão em trajetória curva.
+- Embaralhamento inicial refeito como simulação de baralho real: cada carta recebe movimentos, rotações, escalas e alvos aleatórios renovados durante os 3 segundos da preparação.
+- Build atual: 0.58.
