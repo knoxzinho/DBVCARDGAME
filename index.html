@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Desbravadores: RPG Card Game v43</title>
+<title>Desbravadores: RPG Card Game V55</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
 :root{
   --bg:#070b10;--panel:#0f1720;--panel2:#141e29;--line:#33485b;
   --text:#edf4f7;--muted:#8fa3b2;--gold:#f3c754;--blue:#53c9ef;
@@ -95,7 +95,7 @@ body.weather-sun .field{background:linear-gradient(180deg,#68844c 0 16%,#56763f 
 .deckRow{display:flex;gap:9px;align-items:center;margin-top:7px}.deckVisual{position:relative;width:64px;height:88px;flex:none;filter:drop-shadow(4px 4px 2px #0008);cursor:pointer}
 .deckBack{position:absolute;inset:0;border:2px solid #d7b85a;border-radius:5px;background:url("assets/card-back.png") center/100% 100% no-repeat;display:grid;place-items:center;box-shadow:inset 0 0 0 2px #2b1717,0 3px 0 #0008;overflow:hidden}
 .deckBack small{display:none}.deckBack.mod{background:url("assets/card-back.png") center/100% 100% no-repeat;filter:saturate(.78) hue-rotate(245deg)}.deckCount{position:absolute;top:-8px;right:-8px;width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#111a22;border:2px solid #e6c65e;font-size:8px;font-weight:800}
-.buyInfo{font-size:8px;color:#9eb0bb;line-height:1.4;flex:1}.buyBtn{width:100%;margin-top:7px}.modStatus{font-size:8px;color:#c4b6df;margin-top:6px;line-height:1.35}.modPreview{margin-top:7px}
+.buyInfo{font-size:8px;color:#9eb0bb;line-height:1.4;flex:1}.buyBtn{width:100%;margin-top:7px}.modStatus{font-size:8px;color:#c4b6df;margin-top:6px;line-height:1.35}
 .side{background:#0c131b;border:1px solid #354a5d;border-radius:7px;padding:9px;max-height:calc(100vh - 32px);overflow:auto;position:sticky;top:10px}
 .side>.buyPanel{margin-top:0;margin-bottom:9px}.side>.buyPanel+.buyPanel{margin-top:0}
 .barBox{background:#101923;border:1px solid #2f4354;padding:8px;border-radius:4px;margin-bottom:9px}.barRow{display:flex;justify-content:space-between;align-items:center;font-size:9px;margin-bottom:6px}.barRow b{color:var(--gold)}
@@ -185,7 +185,7 @@ h3{font:700 14px Rajdhani,sans-serif;color:#d7c078;letter-spacing:1px;border-bot
 
 
 /* V22: centro reorganizado + estética 16-bit aprimorada */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
 .weather{display:none!important}
 .field{isolation:isolate}.field:before{z-index:0;opacity:.16;background:linear-gradient(35deg,transparent 46%,#d7f0d7 47% 49%,transparent 50%) 0 0/18px 18px,linear-gradient(-35deg,transparent 46%,#d7f0d7 47% 49%,transparent 50%) 0 0/18px 18px;mix-blend-mode:screen}.mountains,.river{z-index:1}.zone{z-index:7}.zone.enemy{top:14px}.zone.player{bottom:14px}
 .center{left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,72%);min-height:118px;padding:13px 18px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(180deg,#0f1b22f7,#071016f7),repeating-linear-gradient(0deg,transparent 0 5px,#ffffff04 5px 6px);border:3px solid #a87a32;border-radius:6px;box-shadow:0 0 0 2px #24170c,0 12px 30px #000d,inset 0 0 0 2px #e0b85a22,inset 0 0 25px #e7bd4d08;z-index:20;overflow:hidden}.center:before,.center:after{content:"";position:absolute;pointer-events:none}.center:before{inset:5px;border:1px solid #e4bf5b55;border-radius:3px}.center:after{left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,transparent,#f3c754aa 20%,#fff0 50%,#f3c754aa 80%,transparent);opacity:.7}.centerKicker{font-family:"Press Start 2P",monospace!important;font-size:7px!important;letter-spacing:1.5px!important;color:#b9c5ca!important;margin:0 0 8px!important;text-shadow:2px 2px #000}.center b{display:block!important;max-width:95%;font-family:"Press Start 2P",monospace!important;font-size:12px!important;line-height:1.65!important;letter-spacing:.2px!important;color:#f6d36a!important;text-shadow:2px 2px #3a250b!important;text-align:center}.center span{display:block!important;max-width:92%;font-size:8px!important;line-height:1.45!important;color:#c5d0d4!important;margin-top:7px!important;text-align:center}.centerEventMeta{position:relative;z-index:2;margin-top:9px!important;padding:5px 9px!important;border:2px solid #526673!important;border-radius:4px!important;background:#071017!important;color:#9fd3df!important;font-family:"Press Start 2P",monospace!important;font-size:5.5px!important;letter-spacing:.2px!important;box-shadow:2px 2px #0008}.center.hasEvent{border-color:#d2a844;box-shadow:0 0 0 2px #34250f,0 0 22px #d3a84e25,0 14px 34px #000e,inset 0 0 0 2px #f4d56c25}body.weather-rain .center.hasEvent{border-color:#65b9d2;box-shadow:0 0 0 2px #112c35,0 0 28px #4ec9e82e,0 14px 34px #000e}body.weather-storm .center.hasEvent{border-color:#9877c8;box-shadow:0 0 0 2px #241936,0 0 30px #8060b940,0 14px 34px #000e}
@@ -287,6 +287,7 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 .brand small,.pill,.arenaHead,.zoneLabel,.handHeader,.btn,.miniBtn,.target,.objectiveLock,.toast,.modal,.boardCard,.card,.mpPlayer,.mpActionBar{font-family:Inter,'Segoe UI',Arial,sans-serif!important}
 .loginScreen{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 50% 20%,#234b43 0,#0c1819 42%,#05090c 100%)}
 .loginScreen.hidden{display:none}.loginCard{width:min(430px,94vw);padding:30px;background:#0b151a;border:1px solid #7f6a35;border-radius:14px;box-shadow:0 24px 70px #000b, inset 0 0 0 1px #ffffff08;text-align:center}.loginLogo{width:58px;height:58px;margin:0 auto 12px;display:grid;place-items:center;border:2px solid #72d8ea;border-radius:14px;background:#123b46;color:#f3c754;font-size:30px;box-shadow:4px 4px 0 #000}.loginKicker,.tutorialKicker{font-size:9px;letter-spacing:2px;color:#7fd4e1;font-weight:800}.loginCard h1{margin:8px 0 10px;font:800 30px Rajdhani,Inter,sans-serif;line-height:.95;letter-spacing:2px}.loginCard h1 span{color:#f3c754}.loginCard p{font-size:11px;line-height:1.55;color:#a7b7bf;margin:0 0 18px}.loginCard form{display:grid;gap:10px;text-align:left}.loginCard label{font-size:9px;color:#cbd7dc;font-weight:700}.loginCard input{width:100%;margin-top:5px;padding:11px 12px;background:#081017;border:1px solid #334b58;border-radius:7px;color:#fff;outline:none}.loginCard input:focus{border-color:#5bcfe3;box-shadow:0 0 0 2px #5bcfe322}.loginBtn{width:100%;margin-top:4px;padding:11px}.loginHint{font-size:8px;color:#6f818b;margin-top:13px;line-height:1.4}
+.pauseOverlay{position:fixed;inset:0;z-index:9500;display:none;place-items:center;background:#03070bdc;backdrop-filter:blur(4px);padding:20px}.pauseOverlay.show{display:grid}.pausePanel{width:min(520px,92vw);background:#0b141b;border:3px solid #c69b3c;box-shadow:8px 8px 0 #000,inset 0 0 0 2px #e7c66a22;padding:22px;text-align:center}.pausePanel h2{font:900 18px "Press Start 2P",monospace;color:#f4d36d;margin:0 0 12px}.pausePanel p{font-size:9px;color:#aebdc5;line-height:1.6}.pauseActions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:15px}.autoOn{border-color:#7ee6a9!important;background:#16432d!important;color:#dfffe9!important;box-shadow:0 0 0 2px #4fd48a44,3px 3px 0 #000!important}.duelReady{border-color:#d98b8b!important;background:#4b1d25!important;color:#ffe3e3!important}.keyFocus{animation:keyFocusPulse .8s steps(2) 3}@keyframes keyFocusPulse{50%{box-shadow:0 0 0 3px #f3c754,0 0 20px #f3c75488}}
 .tutorialModal{position:fixed;inset:0;z-index:9000;display:none;place-items:center;background:#02070bcc;padding:20px}.tutorialModal.show{display:grid}.tutorialPanel{position:relative;width:min(680px,94vw);min-height:340px;padding:28px;background:#0c171d;border:1px solid #a47a32;border-radius:12px;box-shadow:0 25px 80px #000c}.tutorialClose{position:absolute;right:12px;top:10px;border:0;background:none;color:#cbd5da;font-size:26px;cursor:pointer}.tutorialPanel h2{font:800 26px Rajdhani;margin:6px 0 18px;color:#f3c754}.tutorialStep{min-height:175px;padding:18px;background:#091118;border:1px solid #29404d;border-radius:8px;color:#cbd7dc;font-size:11px;line-height:1.7}.tutorialStep strong{color:#f3c754}.tutorialStep ul{margin:8px 0;padding-left:20px}.tutorialDots{display:flex;gap:6px;justify-content:center;margin:15px}.tutorialDots i{width:7px;height:7px;border-radius:50%;background:#354853}.tutorialDots i.active{background:#f3c754;box-shadow:0 0 8px #f3c75466}.tutorialActions{display:flex;justify-content:space-between;gap:10px}.tutorialActions .btn{min-width:110px}
 /* Cartas limpas: remove scanlines, grades, texturas e pseudo-elementos que atravessavam a carta. */
 .card:before,.card:after,.card .art:before,.card .art:after,.boardCard:before,.boardCard:after{display:none!important;content:none!important;background:none!important}
@@ -583,11 +584,245 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 .liveDur.fire i{background:linear-gradient(90deg,#d24c3e,#ef9d42,#f3cf65)}
 .liveStatus{font-size:6px;color:#a9bcc4;margin-top:2px;text-align:center}
 .structureEvent .eventMeta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* V52: mapa de exploração, upgrades de estruturas e feedback de reparo */
+#dustFX{position:fixed;z-index:12000;pointer-events:none;font-size:46px;opacity:0;transform:translate(-50%,-50%) scale(.5);filter:drop-shadow(0 4px 8px #0008)}
+#dustFX.go{animation:dustBurst .9s ease-out forwards}
+@keyframes dustBurst{0%{opacity:0;transform:translate(-50%,-50%) scale(.45) rotate(-8deg)}18%{opacity:1}100%{opacity:0;transform:translate(-50%,-85%) scale(1.45) rotate(12deg)}}
+.keyFocus{animation:keyFocusPulse 1.1s ease-out 2}
+@keyframes keyFocusPulse{0%,100%{box-shadow:0 0 0 0 #f3cf6544}50%{box-shadow:0 0 0 6px #f3cf6533}}
+.exploreMapGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.exploreMapCard{border:1px solid #3a5260;background:#0a141b;border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:5px;min-height:150px}
+.exploreMapCard h3{margin:0;color:#f3cf65;font:800 13px Rajdhani}.exploreMapCard p{margin:0;color:#9fb1ba;font-size:8px;line-height:1.45}.exploreMapCard small{color:#75d0df;font-size:7px}.exploreMapCard .btn{margin-top:auto}
+@media(max-width:700px){.exploreMapGrid{grid-template-columns:1fr}}
 </style>
 <!-- V50: realtime durability, equipment tooltips, fire fuel and live freshness. -->
+
+<style id="v53-pixel-art-theme">
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+:root{
+ --px-bg:#071018;--px-bg2:#0b1720;--px-panel:#0e1c25;--px-panel2:#122733;
+ --px-line:#315466;--px-light:#7dd9d8;--px-gold:#e8c45a;--px-green:#6fcf68;
+ --px-red:#e85d6a;--px-blue:#4cb8df;--px-purple:#a982d9;--px-shadow:#020509;
+ --game-font:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;
+}
+html,body,button,input,select,textarea{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;}
+body{
+ background-color:var(--px-bg)!important;
+ background-image:
+   linear-gradient(90deg,#ffffff05 1px,transparent 1px),
+   linear-gradient(#ffffff05 1px,transparent 1px),
+   linear-gradient(135deg,#071018 0%,#0b1821 50%,#061016 100%)!important;
+ background-size:8px 8px,8px 8px,100% 100%!important;
+ image-rendering:pixelated!important;
+ letter-spacing:0!important;
+}
+*,*::before,*::after{border-radius:0!important}
+button,.btn,.miniBtn,.pill,.toast,.modal,.objectiveLock,.target,.arena,.side,.panel,.mpPlayer,.mpStat,.mpTurn,.mpField,.center,.weather,.zone,.slot,.boardCard,.card,.deckBack,.fly,.modalCard,.characterPanel,.characterSlot,.tooltip,.mapCard,.resourcePanel,.eventCard,.craftPanel,.inventoryPanel{
+ border-radius:0!important;
+}
+button,.btn,.miniBtn{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;text-transform:uppercase;letter-spacing:-.2px!important}
+.app{max-width:1600px!important;padding:10px!important}
+header{border-bottom:3px solid var(--px-line)!important;padding-bottom:8px!important;margin-bottom:8px!important}
+.logo{width:48px!important;height:48px!important;background:#16313d!important;border:3px solid var(--px-light)!important;box-shadow:4px 4px 0 var(--px-shadow)!important;clip-path:polygon(0 4px,4px 4px,4px 0,calc(100% - 4px) 0,calc(100% - 4px) 4px,100% 4px,100% calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,4px calc(100% - 4px),0 calc(100% - 4px))!important}
+.brand h1{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;font-size:17px!important;letter-spacing:0!important;text-shadow:3px 3px 0 #000!important}
+.brand small{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;font-size:7px!important;letter-spacing:0!important}
+.hud{gap:5px!important}.pill{background:#0a151d!important;border:2px solid #36596a!important;padding:7px 8px!important;box-shadow:3px 3px 0 #000!important}.pill b{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;font-size:11px!important}
+.btn{background:#132936!important;border:2px solid #5e8494!important;color:#eaf7f8!important;box-shadow:3px 3px 0 #000!important;padding:7px 8px!important;font-size:7px!important}
+.btn:hover{background:#1b3948!important;filter:none!important;transform:translate(-1px,-1px)!important;box-shadow:4px 4px 0 #000!important}
+.btn.gold{background:#684d12!important;border-color:#e5bd4c!important}.btn.green{background:#164d35!important;border-color:#6bd08b!important}.btn.danger{background:#57212a!important;border-color:#d56570!important}
+.layout{grid-template-columns:minmax(0,1fr) 340px!important;gap:10px!important}
+.arena,.side,.panel,.resourcePanel,.characterPanel,.inventoryPanel,.craftPanel{background:#0b1720!important;border:2px solid #315466!important;box-shadow:4px 4px 0 #000!important}
+.arenaHead,.handHeader,.zoneLabel,.sectionTitle,.panelTitle{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;color:#dcecef!important;border-color:#315466!important}
+.field{
+ background-color:#163625!important;
+ background-image:
+   linear-gradient(45deg,#ffffff05 25%,transparent 25%,transparent 75%,#ffffff05 75%),
+   linear-gradient(45deg,#ffffff05 25%,transparent 25%,transparent 75%,#ffffff05 75%)!important;
+ background-size:16px 16px!important;background-position:0 0,8px 8px!important;
+ border:3px solid #4d7b65!important;box-shadow:inset 0 0 0 3px #07120c,5px 5px 0 #000!important;
+ filter:none!important;
+}
+.field:before{background-image:linear-gradient(45deg,transparent 46%,#c6e7d118 47% 53%,transparent 54%),linear-gradient(-45deg,transparent 46%,#c6e7d118 47% 53%,transparent 54%)!important;background-size:16px 16px!important;opacity:.35!important}
+.mountains{font-size:62px!important;filter:saturate(.7)!important;image-rendering:pixelated!important}.river{background:#155b78!important;border-top:3px solid #75d5e7!important;box-shadow:0 -3px 0 #0a3042!important}
+.zone{border:2px dashed #7aa39c66!important;background:#06101833!important}.slot{border:1px dashed #9bc2c455!important}
+.center,.weather{background:#0a151deF!important;border:3px solid #d0aa47!important;box-shadow:4px 4px 0 #000!important}.center:before,.center:after{display:none!important}
+.center b,.centerKicker,.centerEventMeta{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important}
+.center b{font-size:10px!important;line-height:1.6!important}.center span{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;font-size:6px!important;line-height:1.7!important}.centerEventMeta{font-size:5px!important}
+.card,.boardCard,.mpBoardCard{
+ background:#0b151c!important;border:3px solid #9a6a31!important;box-shadow:4px 4px 0 #2b180a,7px 7px 0 #000!important;
+ image-rendering:pixelated!important;
+}
+.card:before,.card:after,.boardCard:before{display:none!important}
+.card:hover,.boardCard:hover{transform:translateY(-6px)!important;box-shadow:5px 7px 0 #2b180a,8px 9px 0 #000!important}
+.card .cost{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;background:#145b9b!important;border:3px solid #d8fbff!important;box-shadow:3px 3px 0 #062342!important;border-radius:0!important}
+.card .type{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;background:#5a3518!important;border:2px solid #d09245!important;box-shadow:2px 2px 0 #000!important;clip-path:none!important}
+.card .art,.boardCard .bArt,.mpBoardCard .art{background:#244f49!important;border:2px solid #8a693b!important;box-shadow:inset 0 0 0 2px #ffffff18!important;image-rendering:pixelated!important;filter:none!important}
+.card .name,.boardCard .bName,.mpBoardCard b{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;color:#ffe08a!important;text-shadow:2px 2px 0 #000!important}
+.card .desc,.boardCard .bDesc,.boardCard .materials,.hpText,.mpBoardCard small{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;color:#c5d2d5!important}
+.card .foot{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;background:#071018!important;border:2px solid #3d5966!important;color:#e3c96b!important}
+.hand{gap:8px!important}.card{animation:pixelStep .25s steps(4,end) both!important}
+@keyframes pixelStep{0%{opacity:0;transform:translateY(12px)}50%{opacity:1;transform:translateY(-3px)}100%{transform:none}}
+.side *,.panel *,.characterPanel *,.inventoryPanel *,.craftPanel *,.modal *,.tooltip *{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important}
+.characterSlot,.equipmentSlot{background:#09151d!important;border:2px solid #345767!important;box-shadow:2px 2px 0 #000!important}
+.characterSlot:hover,.equipmentSlot:hover{border-color:#e5c45c!important;background:#10232d!important}
+.tooltip,.cardPopup,.modalCard{background:#08141c!important;border:3px solid #d0a548!important;box-shadow:5px 5px 0 #000!important;color:#e9f2f3!important}
+.tooltip h3,.tooltip strong,.cardPopup h2,.modalCard h2{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;color:#ffd86b!important}
+.progress,.hp,.durability,.statusBar{height:10px!important;background:#061017!important;border:2px solid #355464!important;box-shadow:2px 2px 0 #000!important}.progress i,.hp i,.durability i,.statusBar i{image-rendering:pixelated!important;transition:width .5s steps(6,end)!important}
+.deckBack,.fly{border:3px solid #d9b650!important;box-shadow:4px 4px 0 #000!important;border-radius:0!important}
+.modal{background:#071018f5!important;border:3px solid #d0a548!important;box-shadow:6px 6px 0 #000!important}
+.modal .btn{font-size:7px!important}
+.toast{background:#08151d!important;border:2px solid #d0a548!important;box-shadow:4px 4px 0 #000!important;font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important}
+/* Pixel rain / storm, no smooth blur */
+body.weather-rain .field{background-color:#193c49!important;background-image:repeating-linear-gradient(105deg,transparent 0 7px,#78c9df33 7px 8px)!important}
+body.weather-storm .field{background-color:#111f35!important;background-image:repeating-linear-gradient(105deg,transparent 0 6px,#8c82c033 6px 7px)!important}
+body.weather-sun .field{background-color:#4e6e3c!important;background-image:linear-gradient(0deg,#ffd86b18,#fff0)!important}
+/* remove smooth UI effects */
+*{transition-timing-function:steps(4,end)!important}
+input,select{background:#071018!important;color:#edf4f7!important;border:2px solid #456474!important;border-radius:0!important}
+@media(max-width:760px){.app{padding:6px!important}.brand h1{font-size:11px!important}.brand small{font-size:5px!important}.layout{grid-template-columns:1fr!important}.card{height:205px!important}.field{height:510px!important}.center{width:86%!important}.btn{font-size:6px!important}.pill{font-size:6px!important}}
+
+/* V53 readability pass: preserve the 16-bit visual language without sacrificing legibility. */
+html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-serif!important;}
+.brand h1,.brand small,.hud,.pill,.arenaHead,.zoneLabel,.sectionTitle,.panelTitle,.btn,.miniBtn,.target,.objectiveLock,.toast,.modal,.boardCard,.mpPlayer,.mpActionBar,.handHeader{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;}
+.card{font-family:Inter,'Segoe UI',Arial,sans-serif!important;}
+.card .cost,.card .type,.card .name,.center b,.centerKicker,.centerEventMeta,.tooltip h3,.tooltip strong,.cardPopup h2,.modalCard h2{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;}
+.card .desc,.card .foot,.boardCard .bDesc,.boardCard .materials,.hpText,.mpBoardCard small,.center span{font-family:Inter,'Segoe UI',Arial,sans-serif!important;}
+.side *,.panel *,.characterPanel *,.inventoryPanel *,.craftPanel *,.modal *,.tooltip *{font-family:Inter,'Segoe UI',Arial,sans-serif!important;}
+.card .name{font-weight:800!important;letter-spacing:.4px!important;}
+.card .desc,.card .foot{font-weight:600!important;letter-spacing:.1px!important;}
+.btn,.miniBtn{font-weight:700!important;letter-spacing:.35px!important;}
+.pausePanel h2{font-family:Rajdhani,Inter,'Segoe UI',Arial,sans-serif!important;font-weight:800!important;letter-spacing:.8px!important;}
+
+/* V53 FINAL VISUAL PASS: tipografia única, layout robusto e embaralhamento refinado */
+:root{--game-font:Rajdhani,Inter,"Segoe UI",Arial,sans-serif!important}
+html,body,button,input,select,textarea,*,*::before,*::after{font-family:var(--game-font)!important}
+body{letter-spacing:.15px;overflow-x:hidden}
+.brand h1,.brand small,.pill,.arenaHead,.zoneLabel,.handHeader,.btn,.miniBtn,.target,.objectiveLock,.toast,.modal,.boardCard,.card,.mpPlayer,.mpActionBar,.buyTitle,.buyInfo,.gameFooter{font-family:var(--game-font)!important}
+.card .cost,.card .type,.card .name,.card .desc,.card .foot,.cardWeight,.boardCard .bName,.boardCard .bDesc,.boardCard .materials,.hpText,.center b,.center span,.centerKicker,.centerEventMeta,.tooltip,.tooltip *,.cardPopup,.cardPopup *,.modePanel,.modePanel *,.rulesPanel,.rulesPanel *{font-family:var(--game-font)!important}
+/* Card front keeps the supplied card-back artwork as a subtle texture/watermark. */
+.card{background-color:#101820!important;background-image:linear-gradient(180deg,#16262aee,#0a1218f2),url("assets/card-back.png")!important;background-size:100% 100%,100% 100%!important;background-position:center,center!important;background-blend-mode:normal,soft-light!important}
+.card .art{background-image:linear-gradient(180deg,#4c7d82cc 0%,#315e48cc 62%,#1b3928e8 100%),url("assets/card-back.png")!important;background-size:cover,cover!important;background-position:center,center!important;background-blend-mode:normal,soft-light!important}
+/* Prevent text/button collisions at all widths. */
+.card,.boardCard,.slot,.zone,.hand,.layout,.side,.panel,.buyPanel,.characterPanel,.inventoryPanel,.craftPanel,.modal,.modalActions,.actionModalGrid{min-width:0}
+.card .name,.card .desc,.card .foot,.boardCard .bName,.boardCard .bDesc,.boardCard .materials,.buyInfo{overflow-wrap:anywhere;word-break:normal}
+.card .desc{max-height:31px!important;overflow:hidden!important}
+.card .foot{overflow:hidden!important}
+.hand{align-items:stretch!important;grid-auto-rows:1fr!important}
+.hand .card{height:clamp(190px,21vw,220px)!important;min-height:190px!important;max-height:220px!important}
+.zone{overflow:hidden!important}
+.boardCard{height:100%!important}
+.boardCard .bDesc,.boardCard .materials{overflow:hidden!important;text-overflow:ellipsis!important}
+.gameFooter{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 8px;text-align:center;line-height:1.25;padding:12px 10px 16px;font-size:8px!important;letter-spacing:.7px!important;text-transform:uppercase}
+.gameFooter em{font-style:italic!important;color:#d9e3e7!important;font-weight:700!important}
+.gameFooter span:nth-child(3){color:#d5b85e!important}.gameFooter span:nth-child(5){color:#8fc6d3!important}
+/* Refined 3-second shuffle: tighter deck fan, stepped motion, readable focus text. */
+.shuffleDeck{height:185px!important;perspective:900px!important}
+.shuffleCard{width:82px!important;height:116px!important;border-width:2px!important;box-shadow:4px 5px 0 #000a,0 0 16px #d7b45d22!important;animation:shuffleDeckV53 .72s steps(6,end) infinite!important;transform-origin:50% 85%!important}
+.shuffleCard:nth-child(1){animation-delay:0s!important}.shuffleCard:nth-child(2){animation-delay:.08s!important}.shuffleCard:nth-child(3){animation-delay:.16s!important}.shuffleCard:nth-child(4){animation-delay:.24s!important}.shuffleCard:nth-child(5){animation-delay:.32s!important}.shuffleCard:nth-child(6){animation-delay:.40s!important}.shuffleCard:nth-child(7){animation-delay:.48s!important}
+@keyframes shuffleDeckV53{0%,100%{transform:translate(0,10px) rotate(0deg) scale(.92);opacity:.72}16%{transform:translate(-92px,-10px) rotate(-13deg) scale(1);opacity:1}32%{transform:translate(92px,-4px) rotate(14deg) scale(1);opacity:1}48%{transform:translate(42px,18px) rotate(7deg) scale(.96);opacity:.92}64%{transform:translate(-46px,12px) rotate(-8deg) scale(.98);opacity:1}80%{transform:translate(0,-2px) rotate(0deg) scale(1);opacity:1}}
+.shuffleRun .shuffleCard{animation-duration:.58s!important}
+.shufflePrompt{padding:4px 2px}.shufflePrompt b{font-size:12px!important;letter-spacing:.35px!important}.shufflePrompt p{font-size:8px!important}
+@media(max-width:1100px){.hand .card{height:205px!important}.layout{grid-template-columns:minmax(0,1fr) 310px}}
+@media(max-width:900px){.layout{grid-template-columns:1fr!important}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.hand{grid-template-columns:repeat(3,minmax(0,1fr))!important}.hand .card{height:200px!important}.gameFooter{font-size:7px!important}}
+@media(max-width:650px){.side{grid-template-columns:1fr!important}.hand{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}.hand .card{height:190px!important}.card .art{height:64px!important}.card .name{font-size:10px!important}.card .desc{font-size:6px!important}.card .foot{font-size:5.4px!important}.gameFooter{font-size:6.5px!important;letter-spacing:.4px!important}.shuffleDeck{height:165px!important}}
+
+
+
+/* V55: modificadores ocultos até ativar e objetivos em popup */
+.modActions{display:flex;gap:5px;margin-top:5px}.modActions .btn{flex:1;font-size:7px;padding:6px 4px}.modStatus{min-height:16px}.objectiveSummary{font-size:8px;line-height:1.35;color:#aebfc8;padding:5px 0 6px}.objectiveSummary.ready{color:#f3cf65;font-weight:700}.side .panel #objectivesButton{width:100%;margin-top:2px}
+.shufflePrompt:not(.shuffleRun) .shuffleCard{animation:none!important;animation-delay:0s!important;transform:none!important;opacity:1!important}
+.oneWayShuffle .shuffleCard{animation:shuffleOneWay 0.72s steps(8,end) infinite!important;animation-delay:calc(var(--i) * .08s)!important;transform:none!important}
+
+/* V55: topo minimalista, objetivos responsivos e diário funcional */
+.compactTopBar{display:flex;justify-content:flex-end;align-items:center;min-height:42px}
+.compactTopBar .arenaHeadRight{width:auto;display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:nowrap}
+.compactTopBar .craftTopBtn{flex:0 0 auto}
+.compactTopBar .turn{white-space:nowrap;font-size:9px;font-weight:800}
+#objectivePopupList{max-height:68vh;overflow:auto;padding:2px 3px 2px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+#objectivePopupList .target{margin:0;min-width:0;height:100%;display:flex;flex-direction:column}
+#objectivePopupList .target .req{margin-top:auto}
+#objectivePopupList .target button{margin-top:7px}
+@media(max-width:760px){
+ .compactTopBar{justify-content:center;padding:3px 0 7px}
+ .compactTopBar .arenaHeadRight{width:100%;justify-content:center;gap:6px}
+ .compactTopBar .craftTopBtn{width:38px;height:32px}
+ .compactTopBar .turn{font-size:8px;margin-left:3px}
+ #objectivePopupList{grid-template-columns:1fr;max-height:67vh;gap:6px}
+ #objectivePopupList .target{padding:8px}
+}
+@media(max-width:420px){
+ .compactTopBar .arenaHeadRight{gap:4px}
+ .compactTopBar .craftTopBtn{width:34px;height:30px;font-size:13px}
+ .compactTopBar .turn{font-size:7px}
+ .modal{width:calc(100vw - 18px);padding:11px}
+ .modal h2{font-size:18px}
+}
+
+/* V53 UX refinement: unified Rajdhani typography, journal, compact buy row, shuffle progress and objective bird */
+html,body,button,input,select,textarea,*{font-family:'Rajdhani',sans-serif!important}
+body{font-weight:500;letter-spacing:.15px}
+.buyPanelsRow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px;align-items:stretch;margin-bottom:9px}
+.buyPanelsRow .buyPanel{margin:0;min-width:0;padding:7px}
+.buyPanelsRow .buyTitle{font-size:14px;line-height:1}
+.buyPanelsRow .deckRow{gap:6px;margin-top:5px}
+.buyPanelsRow .deckVisual{width:48px;height:66px}
+.buyPanelsRow .deckCount{width:20px;height:20px;font-size:7px;top:-6px;right:-6px}
+.buyPanelsRow .buyInfo{font-size:7px;line-height:1.2}
+.buyPanelsRow .buyBtn{font-size:7px;padding:6px 4px;margin-top:5px}
+.buyPanelsRow .modStatus{font-size:7px;margin-top:4px}
+
+.journalWindow{position:relative;background:#0a1118;border:2px solid #394f61;padding:7px;margin-top:8px;z-index:20}
+.journalWindow.fixed{position:fixed;right:16px;bottom:16px;width:min(350px,calc(100vw - 32px));max-height:45vh;box-shadow:6px 6px 0 #000c;z-index:9000}
+.journalWindow.hidden{display:none}
+.journalHeader{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:5px}
+.journalHeader h3{margin:0!important}
+.journalControls{display:flex;gap:4px}
+.journalControls .miniBtn{font-size:7px;padding:4px 6px}
+.journalWindow .log{max-height:180px;overflow:auto}
+.shufflePrompt p{margin:6px 0;font-size:10px}
+.shufflePrompt .shuffleCard{animation:none!important;animation-delay:0s!important;transform:none!important;opacity:1!important}
+@keyframes shuffleOneWay{0%{transform:translateX(-78px) rotate(-8deg);opacity:.7}25%{transform:translateX(-35px) translateY(-7px) rotate(-4deg);opacity:1}50%{transform:translateX(15px) translateY(5px) rotate(3deg);opacity:1}75%{transform:translateX(58px) translateY(-4px) rotate(7deg);opacity:1}100%{transform:translateX(92px) translateY(0) rotate(10deg);opacity:.72}}
+.shuffleProgress{height:12px;margin:8px auto 3px;width:min(340px,90%);background:#071017;border:2px solid #4a6170;overflow:hidden;box-shadow:3px 3px 0 #0008}
+.shuffleProgressBar{height:100%;width:0;background:linear-gradient(90deg,#56c8e7,#f3c754);transition:width .08s linear}
+.shufflePercent{font-size:12px;font-weight:700;color:#f3d46c;letter-spacing:1px}
+.objectiveBird{position:fixed;left:50%;top:14%;transform:translateX(-50%) translateY(-18px);display:flex;align-items:center;gap:8px;min-width:250px;max-width:min(420px,90vw);padding:8px 12px;background:#08131aeF;border:2px solid #f3c754;box-shadow:4px 4px 0 #000b;opacity:0;pointer-events:none;z-index:9500}
+.objectiveBird.show{animation:birdNotify 4.8s steps(12,end) both}
+.birdSprite{font-size:26px;filter:drop-shadow(2px 2px 0 #000);display:inline-block;animation:birdFly 1.8s steps(8,end) both}.objectiveBird.show .birdSprite{animation-name:birdFly}.
+.objectiveBird b{display:block;color:#f3cf65;font-size:12px}.objectiveBird small{display:block;color:#d6e0e5;font-size:9px;margin-top:1px}
+@keyframes birdNotify{0%{opacity:0;transform:translateX(-50%) translateY(-28px)}10%,78%{opacity:1;transform:translateX(-50%) translateY(0)}100%{opacity:0;transform:translateX(-50%) translateY(-8px)}}
+@keyframes birdFly{0%{transform:translateX(90px) translateY(10px) rotate(8deg) scale(.72)}22%{transform:translateX(28px) translateY(-10px) rotate(-6deg) scale(1)}45%{transform:translateX(-8px) translateY(3px) rotate(4deg) scale(1.08)}68%{transform:translateX(22px) translateY(-7px) rotate(-5deg) scale(1)}100%{transform:translateX(-8px) translateY(0) rotate(0) scale(1)}}
+.target.ready{border-color:#f3c754!important;box-shadow:0 0 0 2px #f3c75422,3px 3px 0 #0008}
+@media(max-width:760px){.buyPanelsRow{grid-template-columns:1fr 1fr;gap:5px}.buyPanelsRow .buyInfo{display:none}.buyPanelsRow .deckRow{justify-content:center}.buyPanelsRow .buyTitle{font-size:11px}.buyPanelsRow .deckVisual{width:42px;height:58px}.journalWindow.fixed{right:8px;bottom:8px;width:calc(100vw - 16px)}}
+
+.devNotice{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(2,7,11,.88);backdrop-filter:blur(5px);z-index:12000}
+.devNotice.hidden{display:none}
+.devNoticePanel{width:min(620px,94vw);background:linear-gradient(180deg,#111c24,#091118);border:2px solid #d5b85e;box-shadow:8px 8px 0 #000b,0 0 40px #000d;padding:24px;text-align:center;position:relative}
+.devNoticePanel:before{content:"";position:absolute;inset:6px;border:1px solid #d5b85e44;pointer-events:none}
+.devNoticeIcon{font-size:34px;color:#f3cf65;line-height:1;margin-bottom:8px}
+.devNoticeBadge{display:inline-block;padding:5px 9px;border:1px solid #536b78;background:#0b151c;color:#8fc6d3;font-size:10px;font-weight:700;letter-spacing:1.2px}
+.devNoticePanel h2{margin:12px 0 10px;color:#f3cf65;font-size:24px;letter-spacing:.5px}
+.devNoticePanel p{margin:8px auto;color:#d4dfe4;font-size:12px;line-height:1.55;max-width:520px}
+.devNoticePanel p strong{color:#fff}
+.devNoticeNote{margin:15px auto 16px;padding:9px 12px;max-width:520px;background:#0b151c;border-left:3px solid #8fc6d3;color:#9fb1bb;font-size:10px;line-height:1.4;text-align:left}
+.devNoticeBtn{position:relative;z-index:1;min-width:220px;font-size:10px}
+@media(max-width:650px){.devNotice{padding:12px}.devNoticePanel{padding:20px 14px}.devNoticePanel h2{font-size:20px}.devNoticePanel p{font-size:11px}.devNoticeBtn{width:100%;min-width:0}}
+</style>
 </head>
 
 <body>
+<div id="devNotice" class="devNotice" role="dialog" aria-modal="true" aria-labelledby="devNoticeTitle">
+  <div class="devNoticePanel">
+    <div class="devNoticeIcon">⚠</div>
+    <div class="devNoticeBadge">PRE-ALPHA • DESENVOLVIMENTO ATIVO</div>
+    <h2 id="devNoticeTitle">Jogo em desenvolvimento</h2>
+    <p>Este jogo ainda está sendo desenvolvido. Algumas <strong>mecânicas, progressão, animações e textos</strong> podem apresentar erros, comportamentos inesperados ou mudanças durante a partida.</p>
+    <p>O conteúdo será <strong>corrigido, ajustado e melhorado continuamente</strong> à medida que o desenvolvimento avança. Novos sistemas e refinamentos também poderão alterar partes da experiência atual.</p>
+    <div class="devNoticeNote">Ao continuar, você está acessando uma versão de desenvolvimento do jogo.</div>
+    <button class="btn gold devNoticeBtn" id="devNoticeContinue">ENTENDI • CONTINUAR</button>
+  </div>
+</div>
+
 <div id="modeModal" class="modeModal">
   <div class="modePanel">
     <div class="modeBadge" style="text-align:center">MODO DE JOGO</div>
@@ -608,7 +843,9 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
     <div class="pill">👣 AÇÕES <b id="actions">2</b></div>
     <div class="pill">⭐ <b id="stars">5</b></div>
     <button class="btn iconBtn" id="rulesButton" title="Regras rápidas" aria-label="Regras rápidas">📌</button>
-    <button class="btn iconBtn" id="endRound" title="Encerrar rodada" aria-label="Encerrar rodada">⏭️</button>
+    <button class="btn iconBtn" id="endRound" title="Próxima rodada" aria-label="Próxima rodada">➡️</button>
+    <button class="btn iconBtn" id="autoButton" title="Autogame: jogar automaticamente" aria-label="Autogame">🤖</button>
+    <button class="btn iconBtn" id="duelButton" title="Duelo" aria-label="Duelo" style="display:none">⚔️</button>
     <button class="btn iconBtn" id="mpButton" title="Multiplayer local" aria-label="Multiplayer local">👥</button>
   </div>
 </header>
@@ -616,7 +853,7 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 <div class="layout">
 <main class="main">
 <section class="arena">
-  <div class="arenaHead"><div class="arenaTitle"><strong>ACAMPAMENTO</strong><div class="topResources" id="topResources"></div></div><div class="arenaHeadRight"><button class="craftTopBtn" id="inventoryButton" title="Abrir inventário armazenado" aria-label="Abrir inventário armazenado">🎒</button><button class="craftTopBtn" id="mapButton" title="Comprar mapa" aria-label="Comprar mapa">🗺️</button><button class="craftTopBtn" id="craftButton" title="Abrir oficina e fabricar itens" aria-label="Abrir oficina e fabricar itens">🛠️</button><span class="turn" id="phase">SEM AÇÕES • ☀️ DIA</span></div></div>
+  <div class="arenaHead compactTopBar"><div class="arenaHeadRight"><button class="craftTopBtn" id="inventoryButton" title="Inventário" aria-label="Inventário">🎒</button><button class="craftTopBtn" id="mapButton" title="Mapa" aria-label="Mapa">🗺️</button><button class="craftTopBtn" id="craftButton" title="Craft" aria-label="Craft">🛠️</button><span class="turn" id="phase">PLANEJAMENTO • ☀️ DIA</span></div></div>
   <div class="field">
     <div class="mountains">▲ ▲ ▲ ▲ ▲</div><div class="river"></div><div class="weatherFX sun" id="weatherSunFX"></div><div class="weatherFX rain" id="weatherRainFX"></div><div class="weatherFX storm" id="weatherStormFX"></div>
     <div class="zone enemy"><span class="zoneLabel">AMBIENTE / EVENTOS</span>
@@ -640,6 +877,7 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 </main>
 
 <aside class="side">
+<div class="buyPanelsRow">
 <div class="buyPanel">
     <div class="buyTitle">COMPRAR CARTA</div>
     <div class="deckRow">
@@ -650,15 +888,16 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
   </div>
 
 <div class="buyPanel mod">
-    <div class="buyTitle">DECK DE MODIFICADORES</div>
+    <div class="buyTitle">MODIFICADORES</div>
     <div class="deckRow">
       <div class="deckVisual" id="modDeck"><div class="deckBack mod">⚡<small>CLIMA</small></div><div class="deckCount" id="modDeckCount">10</div></div>
       <div class="buyInfo">Apenas 1 modificador pode estar disponível ou ativo. Quando o ativo termina, a compra é liberada.</div>
     </div>
-    <button class="btn buyBtn" id="modButton">COMPRAR MODIFICADOR</button>
+    <button class="btn gold buyBtn" id="modButton">COMPRAR MODIFICADOR</button>
     <div class="modStatus" id="modStatus">Nenhum modificador na mão ou ativo.</div>
-    <div class="modPreview" id="modPreview"></div>
+    <div class="modActions" id="modActions"></div>
   </div>
+</div>
 
   <div class="characterPanel" id="characterPanel">
     <div class="characterHeader"><b>PERSONAGEM</b><span>EQUIPAMENTOS</span></div>
@@ -800,18 +1039,20 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
     <div style="font-size:7.5px;color:#8fa3b0;line-height:1.4">Se você passar 3 rodadas sem combinar/criar ou concluir objetivo, Fome e Sede caem 3%.</div>
   </div>
 
-<h3>🎯 OBJETIVOS</h3><div id="targets"></div>
+<h3>🎯 OBJETIVOS</h3><div id="objectiveSummary" class="objectiveSummary">Nenhum objetivo pronto.</div><button class="btn gold" id="objectivesButton" type="button" onclick="openObjectivesModal()">ABRIR OBJETIVOS</button>
 
   <h3>⚡ MODIFICADORES ATIVOS</h3><div class="modActive" id="mods">Nenhum modificador ativo.</div>
 
-  <h3>📜 DIÁRIO</h3>
-<div id="logTabs" style="display:flex; gap:4px; margin-bottom:4px;">
-  <button class="miniBtn logTab active" data-filter="all">Todos</button>
-  <button class="miniBtn logTab" data-filter="alert">Alertas</button>
-  <button class="miniBtn logTab" data-filter="gather">Coleta</button>
-  <button class="miniBtn logTab" data-filter="action">Ações</button>
+  <div class="journalWindow" id="journalWindow">
+  <div class="journalHeader"><h3>📜 DIÁRIO</h3><div class="journalControls"><button class="miniBtn" id="journalPinBtn" type="button">📌 FIXAR</button><button class="miniBtn" id="journalToggleBtn" type="button">OCULTAR</button></div></div>
+  <div id="logTabs" style="display:flex; gap:4px; margin-bottom:4px;">
+    <button class="miniBtn logTab active" data-filter="all">Todos</button>
+    <button class="miniBtn logTab" data-filter="alert">Alertas</button>
+    <button class="miniBtn logTab" data-filter="gather">Coleta</button>
+    <button class="miniBtn logTab" data-filter="action">Ações</button>
+  </div>
+  <div class="log" id="log"></div>
 </div>
-<div class="log" id="log"></div>
 
 
   
@@ -822,6 +1063,18 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 </aside>
 </div>
 </div>
+<div id="pauseOverlay" class="pauseOverlay" aria-hidden="true">
+  <div class="pausePanel">
+    <h2>⏸ JOGO PAUSADO</h2>
+    <p>A expedição está congelada. Dia/noite, degradação, perecíveis e Autogame serão retomados ao continuar.</p>
+    <div class="pauseActions">
+      <button class="btn gold" id="resumeButton">▶ CONTINUAR</button>
+      <button class="btn" id="pauseTutorialButton">📖 TUTORIAL</button>
+      <button class="btn" id="pauseRulesButton">📌 REGRAS</button>
+    </div>
+  </div>
+</div>
+
 <div id="tutorialModal" class="tutorialModal">
   <div class="tutorialPanel">
     <button class="tutorialClose" id="tutorialClose">×</button>
@@ -850,16 +1103,18 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
       • Objetivos concluídos viram eventos em AMBIENTE / EVENTOS.<br>
       • Sem Mapa, os objetivos ficam ocultos. À noite, Mapa + Lanterna liberam a consulta. O Livro de Objetivos habilita o cumprimento.<br>
       • Chuva, Tempestade e Sol Intenso alteram o ambiente e podem afetar a expedição.<br>
-      • O objetivo final é montar o ACAMPAMENTO COMPLETO.
+      • O ACAMPAMENTO COMPLETO não encerra a partida: ele libera DUELO e novos biomas reais.
+      • ESC pausa. TAB abre os mapas. CAPS LOCK destaca o personagem. 🤖 AUTOGAME joga automaticamente para você observar.
     </div>
   </div>
 </div>
 
 <div id="mpScreen" class="mpScreen"></div>
 
-<footer class="gameFooter"><span>DESBRAVADORES: RPG CARD GAME</span><span>•</span><span>BETA</span><span>•</span><span>V49</span></footer>
+<footer class="gameFooter"><span>DESBRAVADORES: RPG CARD GAME</span><span>•</span><span>PRE-ALPHA</span><span>•</span><span>BUILD 0.55</span><span>•</span><em>DESENVOLVIDO POR KNOXZINHO</em></footer>
 <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
 <div class="toast" id="toast"><div class="toastIcon">!</div><div><b id="toastTitle"></b><span id="toastText"></span></div><button class="btn gold" id="toastBtn">VER</button></div>
+<div class="objectiveBird" id="objectiveBird" aria-live="polite"><span class="birdSprite">🐦</span><div><b id="birdTitle">OBJETIVO PRONTO</b><small id="birdText"></small></div></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
@@ -875,7 +1130,7 @@ const C = {
   wood:{n:"LENHA",type:"MATERIAL",cost:2,i:"🪓",d:"Madeira seca para manter o fogo.",s:"Serve para Fogueira e preparo de alimentos."},
   matches:{n:"FÓSFOROS",type:"EQUIPAMENTO",cost:2,i:"🕯️",d:"Acende uma fogueira com segurança.",s:"Serve para Fogueira."},
   bucket:{n:"BALDE",type:"EQUIPAMENTO",cost:2,i:"🛢️",d:"Recipiente para coleta de água.",s:"Serve para Reserva de Água."},
-  canteen:{n:"CANTIL",type:"EQUIPAMENTO",cost:2,i:"💧",d:"Armazena água para a equipe.",s:"Serve para Reserva de Água."},
+  canteen:{n:"CANTIL",type:"EQUIPAMENTO",cost:2,i:"💧",d:"Armazena água para a Unidade.",s:"Serve para Reserva de Água."},
   food:{n:"ALIMENTO",type:"SUPRIMENTO",cost:2,i:"🍞",d:"Ração simples para a expedição.",s:"Recupera fome quando consumida."},
   stakes:{n:"ESTACAS",type:"MATERIAL",cost:1,i:"📌",d:"Fixam a barraca contra vento e chuva.",s:"Podem reforçar uma Barraca."},
   compass:{n:"BÚSSOLA",type:"EQUIPAMENTO",cost:3,i:"🧭",d:"Auxilia a orientação fora da área do acampamento.",s:"Serve para Navegação Segura."},
@@ -947,20 +1202,20 @@ const DECK = [
 const MOD_DECK = ["rain","rain","storm","storm","drought","drought","rain","storm","drought","rain"];
 
 const OBJECTIVES = [
- {id:"tent",n:"MONTAR BARRACA",req:["rope","tarp"],res:"tent",reward:5,desc:"Monte um abrigo básico para proteger a equipe.",event:"ABRIGO MONTADO",eventDesc:"A equipe ganhou um ponto seco para descansar. O ambiente fica estável.",weather:"stable"},
+ {id:"tent",n:"MONTAR BARRACA",req:["rope","tarp"],res:"tent",reward:5,desc:"Monte um abrigo básico para proteger a Unidade.",event:"ABRIGO MONTADO",eventDesc:"A Unidade ganhou um ponto seco para descansar. O ambiente fica estável.",weather:"stable"},
  {id:"fire",n:"ACENDER FOGUEIRA",req:["wood","matches"],res:"fire",reward:4,desc:"Prepare uma fonte de calor e cozinha.",event:"FOGO DE ACAMPAMENTO",eventDesc:"A fogueira está acesa e permite preparar refeições e atravessar a noite.",weather:"stable"},
- {id:"water",n:"COLETAR ÁGUA",req:["bucket","canteen"],res:"water",reward:4,desc:"Garanta água armazenada para a expedição.",event:"PONTO DE ÁGUA",eventDesc:"A equipe encontrou uma fonte e armazenou água para a expedição.",weather:"rain"},
- {id:"meal",n:"PREPARAR REFEIÇÃO",req:["fire","food"],res:"meal",reward:4,desc:"Use uma fogueira e alimento para preparar uma refeição.",event:"REFEIÇÃO PRONTA",eventDesc:"A equipe preparou uma refeição e recuperou parte dos suprimentos.",weather:"stable"},
+ {id:"water",n:"COLETAR ÁGUA",req:["bucket","canteen"],res:"water",reward:4,desc:"Garanta água armazenada para a expedição.",event:"PONTO DE ÁGUA",eventDesc:"A Unidade encontrou uma fonte e armazenou água para a expedição.",weather:"rain"},
+ {id:"meal",n:"PREPARAR REFEIÇÃO",req:["fire","food"],res:"meal",reward:4,desc:"Use uma fogueira e alimento para preparar uma refeição.",event:"REFEIÇÃO PRONTA",eventDesc:"A Unidade preparou uma refeição e recuperou parte dos suprimentos.",weather:"stable"},
  {id:"shelter",n:"ABRIGO REFORÇADO",req:["tent","stakes","hammer"],res:"shelter",reward:5,desc:"Use estacas para transformar a barraca em um abrigo mais resistente.",event:"FRENTE DE TEMPESTADE",eventDesc:"O abrigo reforçado foi preparado antes de uma frente de tempestade.",weather:"storm"},
  {id:"navigation",n:"NAVEGAÇÃO SEGURA",req:["compass","map"],res:"navigation",reward:4,desc:"Combine mapa e bússola para traçar uma rota segura.",event:"ROTA TRAÇADA",eventDesc:"A rota segura foi definida. A expedição reduz o risco de se perder.",weather:"stable"},
  {id:"waterSafe",n:"PURIFICAR ÁGUA",req:["water","filter"],res:"waterSafe",reward:4,desc:"Use o filtro na reserva para obter água mais segura.",event:"ÁGUA PURIFICADA",eventDesc:"A reserva foi tratada e pode ser usada com menor risco.",weather:"rain"},
- {id:"signal",n:"SINALIZAÇÃO DE EMERGÊNCIA",req:["whistle","flashlight"],res:"signal",reward:3,desc:"Prepare meios simples de sinalização sonora e luminosa.",event:"SINAL DE EMERGÊNCIA",eventDesc:"A equipe deixou uma sinalização pronta para situações de emergência.",weather:"stable"},
+ {id:"signal",n:"SINALIZAÇÃO DE EMERGÊNCIA",req:["whistle","flashlight"],res:"signal",reward:3,desc:"Prepare meios simples de sinalização sonora e luminosa.",event:"SINAL DE EMERGÊNCIA",eventDesc:"A Unidade deixou uma sinalização pronta para situações de emergência.",weather:"stable"},
  {id:"medical",n:"POSTO DE PRIMEIROS SOCORROS",req:["medicine","backpack"],res:"medical",reward:4,desc:"Organize kit médico e mochila em um ponto de atendimento.",event:"POSTO MÉDICO",eventDesc:"O kit de primeiros socorros está organizado e acessível.",weather:"stable"},
- {id:"kitchen",n:"MONTAR ÁREA DE COZINHA",req:["fire","cookingPot","food"],res:"meal",reward:3,desc:"Organize fogo, panela e alimento em uma área segura de cozinha.",event:"ÁREA DE COZINHA",eventDesc:"A cozinha foi organizada longe da área de descanso, com fogo controlado e alimento protegido.",weather:"stable"},
- {id:"rainShelter",n:"PROTEGER O ABRIGO DA CHUVA",req:["tent","groundsheet","raincoat","hammer"],res:"shelter",reward:4,desc:"Prepare a barraca para enfrentar um período de chuva.",event:"CHUVA NA EXPEDIÇÃO",eventDesc:"O abrigo foi preparado para a chuva. A equipe mantém uma área seca para descanso.",weather:"rain"},
- {id:"routeMarked",n:"SINALIZAR A TRILHA",req:["map","compass","whistle"],res:"navigation",reward:3,desc:"Trace a rota e deixe pontos de comunicação para a equipe.",event:"TRILHA SINALIZADA",eventDesc:"A rota foi registrada e os pontos de comunicação foram preparados para o retorno ao acampamento.",weather:"stable"},
- {id:"campOrganization",n:"ORGANIZAR O ACAMPAMENTO",req:["backpack","notebook","hygiene"],res:"medical",reward:3,desc:"Organize equipamentos, registros e higiene para uma permanência segura.",event:"ACAMPAMENTO ORGANIZADO",eventDesc:"Equipamentos e suprimentos foram separados por função, facilitando a rotina da equipe.",weather:"stable"},
- {id:"camp",n:"MONTAR ACAMPAMENTO COMPLETO",req:["tent","fire","water"],res:"camp",reward:6,desc:"Una abrigo, fogo e água. Este é o objetivo final da expedição.",event:"ACAMPAMENTO COMPLETO",eventDesc:"Abrigo, fogo e água estão integrados. A expedição concluiu seu objetivo final.",weather:"stable",final:true}
+ {id:"kitchen",n:"MONTAR ÁREA DE COZINHA",req:["fire","cookingPot","food"],res:"kitchen",reward:3,desc:"Organize fogo, panela e alimento em uma área segura de cozinha.",event:"ÁREA DE COZINHA",eventDesc:"A cozinha foi organizada longe da área de descanso, com fogo controlado e alimento protegido.",weather:"stable"},
+ {id:"rainShelter",n:"PROTEGER O ABRIGO DA CHUVA",req:["tent","groundsheet","raincoat","hammer"],res:"shelter",reward:4,desc:"Prepare a barraca para enfrentar um período de chuva.",event:"CHUVA NA EXPEDIÇÃO",eventDesc:"O abrigo foi preparado para a chuva. A Unidade mantém uma área seca para descanso.",weather:"rain"},
+ {id:"routeMarked",n:"SINALIZAR A TRILHA",req:["map","compass","whistle"],res:"navigation",reward:3,desc:"Trace a rota e deixe pontos de comunicação para a Unidade.",event:"TRILHA SINALIZADA",eventDesc:"A rota foi registrada e os pontos de comunicação foram preparados para o retorno ao acampamento.",weather:"stable"},
+ {id:"campOrganization",n:"ORGANIZAR O ACAMPAMENTO",req:["backpack","notebook","hygiene"],res:"medical",reward:3,desc:"Organize equipamentos, registros e higiene para uma permanência segura.",event:"ACAMPAMENTO ORGANIZADO",eventDesc:"Equipamentos e suprimentos foram separados por função, facilitando a rotina da Unidade.",weather:"stable"},
+ {id:"camp",n:"MONTAR ACAMPAMENTO COMPLETO",req:["tent","fire","water"],res:"camp",reward:6,desc:"Una abrigo, fogo e água. Este objetivo prepara a Unidade para regiões mais exigentes.",event:"ACAMPAMENTO COMPLETO",eventDesc:"Abrigo, fogo e água estão integrados. A base está pronta para novas regiões e desafios.",weather:"stable",final:true}
 ];
 
 Object.assign(C,{
@@ -969,9 +1224,9 @@ Object.assign(C,{
   machete:{n:"FACÃO",type:"EQUIPAMENTO",cost:3,i:"🗡️",d:"Ferramenta de corte versátil.",s:"Equipar permite encontrar +1 de Lenha na coleta.",equipable:true,slot:"weapon",equipLimit:1},
   meat:{n:"CARNE CRUA",type:"MATERIAL",cost:1,i:"🥩",d:"Carne de caça.",s:"Pode ser assada na fogueira."},
   cookedMeat:{n:"CARNE ASSADA",type:"SUPRIMENTO",cost:0,i:"🍖",d:"Carne nutritiva assada.",s:"Recupera bastante fome e vida.",created:true,consumable:"cookedMeat"},
-  tent:{n:"BARRACA",type:"ESTRUTURA",cost:5,i:"⛺",d:"Abrigo para a equipe.",s:"Resiste ao clima e pode ser reforçada.",struct:true,baseRes:5},
+  tent:{n:"BARRACA",type:"ESTRUTURA",cost:5,i:"⛺",d:"Abrigo para a Unidade.",s:"Resiste ao clima e pode ser reforçada.",struct:true,baseRes:5},
  fire:{n:"FOGUEIRA",type:"ESTRUTURA",cost:4,i:"🔥",d:"Fonte de calor e cozinha.",s:"Permite preparar refeições.",struct:true,baseRes:4},
- water:{n:"RESERVA DE ÁGUA",type:"ESTRUTURA",cost:4,i:"🏺",d:"Água armazenada para a equipe.",s:"Pode ser consumida para recuperar sede.",struct:true,baseRes:4},
+ water:{n:"RESERVA DE ÁGUA",type:"ESTRUTURA",cost:4,i:"🏺",d:"Água armazenada para a Unidade.",s:"Pode ser consumida para recuperar sede.",struct:true,baseRes:4},
  meal:{n:"REFEIÇÃO",type:"SUPRIMENTO CRIADO",cost:0,i:"🍲",d:"Refeição preparada no acampamento.",s:"Recupera mais fome.",created:true},
  shelter:{n:"ABRIGO REFORÇADO",type:"ESTRUTURA",cost:0,i:"🏠",d:"Barraca protegida por estacas.",s:"Resiste melhor à tempestade.",struct:true,baseRes:8},
  navigation:{n:"ROTA SEGURA",type:"OBJETIVO",cost:0,i:"🛤️",d:"Mapa e bússola usados para traçar a rota.",s:"Reduz o risco de se perder.",created:true},
@@ -982,7 +1237,7 @@ kitchen:{n:"ÁREA DE COZINHA",type:"ESTRUTURA",cost:0,i:"🍳",d:"Área segura p
 });
 Object.assign(C,{
  trailMeal:{n:"REFEIÇÃO DE TRILHA",type:"SUPRIMENTO",cost:1,i:"🍲",d:"Refeição quente preparada com recursos coletados.",s:"Recupera fome e um pouco de vida.",created:true,consumable:"meal"},
- rehydration:{n:"BEBIDA DE REIDRATAÇÃO",type:"SUPRIMENTO",cost:1,i:"🧃",d:"Mistura simples de água e alimento para recuperar a equipe.",s:"Recupera bastante sede e um pouco de vida.",created:true,consumable:"rehydration"},
+ rehydration:{n:"BEBIDA DE REIDRATAÇÃO",type:"SUPRIMENTO",cost:1,i:"🧃",d:"Mistura simples de água e alimento para recuperar a Unidade.",s:"Recupera bastante sede e um pouco de vida.",created:true,consumable:"rehydration"},
  bandage:{n:"ATADURA",type:"SUPRIMENTO",cost:1,i:"🩹",d:"Atadura improvisada para pequenos ferimentos.",s:"Recupera vida sem precisar de estrutura.",created:true,consumable:"bandage"}
 });
 
@@ -1009,7 +1264,7 @@ const UNIQUE_ICONS = {
 Object.entries(UNIQUE_ICONS).forEach(([id,icon])=>{ if(C[id]) C[id].i=icon; });
 
 const RESOURCE_TYPES={
- wood:{n:"Madeira",i:"🪵"},fiber:{n:"Fibras",i:"🌿"},fabric:{n:"Tecido",i:"🧵"},metal:{n:"Metal",i:"🔩"},water:{n:"Água",i:"💧"},food:{n:"Alimento",i:"🥫"},fuel:{n:"Combustível",i:"🔥"},medicine:{n:"Medicinais",i:"🌿"}
+ wood:{n:"Madeira",i:"🪵"},fiber:{n:"Fibras",i:"🌿"},fabric:{n:"Tecido",i:"🧵"},metal:{n:"Metal",i:"🔩"},water:{n:"Água",i:"💧"},food:{n:"Alimento",i:"🥫"},fuel:{n:"Combustível",i:"🔥"},medicine:{n:"Medicinais",i:"🌿"},fruit:{n:"Frutas Silvestres",i:"🍓"},seeds:{n:"Sementes",i:"🌰"},clay:{n:"Argila",i:"🟤"},bamboo:{n:"Bambu",i:"🎋"}
 };
 const RECIPES=[
  // TIER 1 • matérias-primas → itens básicos
@@ -1073,14 +1328,14 @@ const RECIPES=[
 let S = {
  round:1, actions:2, stars:5, nextStars:5, roundStarBonus:0, drawsThisRound:0, paidDraws:0,
  mode:"adventure", difficulty:0, survivalRun:0,
- resources:{wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0}, resourceFocus:"wood", collectedThisRound:false,
+ resources:{wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0,fruit:0,seeds:0,clay:0,bamboo:0}, resourceFocus:"wood", collectedThisRound:false,
  hunger:100, thirst:100, health:100, canteenWater:100, spoilage:{}, freshness:{}, itemDurability:{}, runtimeLastTick:Date.now(),
  timeOfDay:"day", nextPhaseAt:0, phaseDuration:30000,
  deck:[], hand:[], field:[], grave:[],
  modDeck:[], modHand:null, mods:[],
- completed:[], selected:null, notified:new Set(),
+ completed:[], selected:null, notified:new Set(), readyObjectiveNotified:new Set(),
  freeDraw:true, gameOver:false, weather:"stable",
- inventory:[], backpackStorage:[], equipment:{head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]}, idleRounds:0, effortThisRound:false, events:[], activeEvent:null, victory:false, firstObjective:null, mapDiscovered:false, bookDiscovered:false
+ inventory:[], backpackStorage:[], equipment:{head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]}, idleRounds:0, effortThisRound:false, events:[], activeEvent:null, victory:false, firstObjective:null, mapDiscovered:false, bookDiscovered:false, areaMaps:{forest:false,grove:false,cache:false}, areaMapUses:{forest:0,grove:0,cache:0}
 };
 
 const MP={enabled:false,active:0,players:[],turns:0};
@@ -1089,9 +1344,9 @@ ensureInventoryState();
 
 function clonePlayerState(base){
   const x=JSON.parse(JSON.stringify(base));
-  x.notified=new Set(); x.deck=shuffle(DECK); x.hand=[]; while(x.hand.length<5)x.hand.push(x.deck.pop());
+  x.notified=new Set(); x.readyObjectiveNotified=new Set(); x.modLastChangeRound=0; x.modFreeChangeRound=0; x.deck=shuffle(DECK); x.hand=[]; while(x.hand.length<5)x.hand.push(x.deck.pop());
   x.modDeck=shuffle(MOD_DECK); x.modHand=x.modDeck.pop(); x.mods=[]; x.field=[]; x.completed=[]; x.grave=[];
-  x.round=1;x.actions=2;x.stars=5;x.nextStars=5;x.roundStarBonus=0;x.drawsThisRound=0;x.paidDraws=0;x.mode=base.mode||"adventure";x.difficulty=base.difficulty||0;x.survivalRun=base.survivalRun||0;x.resources={wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0};x.resourceFocus="wood";x.collectedThisRound=false;x.hunger=100;x.thirst=100;x.health=100;x.canteenWater=100;x.spoilage={};x.freshness={};x.itemDurability={};x.runtimeLastTick=Date.now();x.timeOfDay="day";x.nextPhaseAt=0;x.phaseDuration=30000;x.idleRounds=0;x.effortThisRound=false;x.weather="stable";x.inventory=[];x.backpackStorage=[];x.equipment={head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]};x.inventoryShuffleDone=false;x.events=[];x.activeEvent=null;x.victory=false;x.gameOver=false;x.freeDraw=true;x.mapDiscovered=false;x.bookDiscovered=false;
+  x.round=1;x.actions=2;x.stars=5;x.nextStars=5;x.roundStarBonus=0;x.drawsThisRound=0;x.paidDraws=0;x.mode=base.mode||"adventure";x.difficulty=base.difficulty||0;x.survivalRun=base.survivalRun||0;x.resources={wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0,fruit:0,seeds:0,clay:0,bamboo:0};x.resourceFocus="wood";x.collectedThisRound=false;x.hunger=100;x.thirst=100;x.health=100;x.canteenWater=100;x.spoilage={};x.freshness={};x.itemDurability={};x.runtimeLastTick=Date.now();x.timeOfDay="day";x.nextPhaseAt=0;x.phaseDuration=30000;x.idleRounds=0;x.effortThisRound=false;x.weather="stable";x.inventory=[];x.backpackStorage=[];x.equipment={head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]};x.inventoryShuffleDone=false;x.events=[];x.activeEvent=null;x.victory=false;x.gameOver=false;x.freeDraw=true;x.mapDiscovered=false;x.bookDiscovered=false;x.areaMaps={forest:false,grove:false,cache:false};x.areaMapUses={forest:0,grove:0,cache:0};x.campCompleted=false;x.duelUnlocked=false;x.advancedMapsUnlocked=false;x.paused=false;x.autoGame=false;x.duelStats={wins:0,losses:0};
   return x;
 }
 function mpCall(idx,fn,...args){
@@ -1145,6 +1400,19 @@ document.querySelectorAll(".logTab").forEach(btn => {
     };
 });
 
+function setJournalHidden(hidden){const j=$("journalWindow");if(!j)return;j.classList.toggle("hidden",hidden);localStorage.setItem("desbravadores_journal_hidden",hidden?"1":"0");}
+function setJournalFixed(fixed){const j=$("journalWindow");if(!j)return;j.classList.toggle("fixed",fixed);localStorage.setItem("desbravadores_journal_fixed",fixed?"1":"0");const b=$("journalPinBtn");if(b)b.textContent=fixed?"📌 DESFIXAR":"📌 FIXAR";}
+function initJournalControls(){
+ const j=$("journalWindow"),hide=$("journalToggleBtn"),pin=$("journalPinBtn"); if(!j)return;
+ hide.onclick=()=>{const hidden=!j.classList.contains("hidden");setJournalHidden(hidden);if(!hidden)hide.textContent="OCULTAR";else hide.textContent="MOSTRAR";};
+ pin.onclick=()=>setJournalFixed(!j.classList.contains("fixed"));
+ if(localStorage.getItem("desbravadores_journal_fixed")==="1")setJournalFixed(true);
+ if(localStorage.getItem("desbravadores_journal_hidden")==="1"){setJournalHidden(true);hide.textContent="MOSTRAR";}
+}
+function showObjectiveBird(o){
+ const el=$("objectiveBird");if(!el||!o)return;$("birdTitle").textContent="🎯 OBJETIVO PRONTO";$("birdText").textContent=o.n+" pode ser cumprido agora.";el.classList.remove("show");void el.offsetWidth;el.classList.add("show");
+}
+
 function costPenalty(){return S.mods.some(m=>m.costUp)?1:0}
 function cardCost(id){return Math.max(0,(C[id]?.cost||0)+costPenalty())}
 function cardDef(id){return C[id]||{n:id||"ITEM DESCONHECIDO",i:"❔",cost:0,type:"ITEM",d:"Item não catalogado.",s:"Verifique a receita ou o estado da partida."}}
@@ -1158,7 +1426,12 @@ function structureHas(id){return findStructureEventIndex(id)>=0;}
 function fieldHas(id){return S.field.some(x=>x.id===id)||structureHas(id)}
 function objectiveResultDone(id){return S.completed.some(done=>OBJECTIVES.find(o=>o.id===done)?.res===id)}
 function ownedCount(id){ensureEquipmentState();return S.field.filter(x=>x.id===id).length+S.hand.filter(x=>x===id).length+S.inventory.filter(x=>x===id).length+S.backpackStorage.filter(x=>x===id).length+Object.values(S.equipment).flat().filter(x=>x===id).length}
-function requirementAvailable(id){if(id==="map")return !!S.mapDiscovered;if(id==="book")return !!S.bookDiscovered;if(objectiveResultDone(id))return true;return ownedCount(id)>0}
+function requirementAvailable(id){
+  if(id==="map")return hasMapAccess();
+  if(id==="book")return hasBookAccess();
+  if(objectiveResultDone(id))return true;
+  return ownedCount(id)>0;
+}
 function hasResource(id){return requirementAvailable(id)}
 function hasInInventory(id){ensureEquipmentState();return S.hand.includes(id)||S.inventory.includes(id)||S.field.some(x=>x.id===id)||Object.values(S.equipment).some(arr=>arr.includes(id))}
 function discoveredSpecial(id){return id==="map"?S.mapDiscovered:(id==="book"?S.bookDiscovered:(ownedCount(id)>0||S.completed.includes(id)||S.grave.includes(id)))}
@@ -1184,6 +1457,7 @@ function schedulePhase(initial=false){
   S.nextPhaseAt=Date.now()+S.phaseDuration;
 }
 function tickDayNight(){
+  if(S.paused||S.gameOver)return;
   if(!S.nextPhaseAt)schedulePhase(true);
   if(Date.now()>=S.nextPhaseAt){
     S.timeOfDay=S.timeOfDay==="day"?"night":"day";
@@ -1192,12 +1466,14 @@ function tickDayNight(){
     render();
   }
 }
+function hasMapAccess(){return !!S.mapDiscovered || ownedCount("map")>0}
+function hasBookAccess(){return !!S.bookDiscovered || ownedCount("book")>0}
 function objectivesUnlocked(){
-  if(!S.mapDiscovered)return false;
+  if(!hasMapAccess())return false;
   if(!isNight())return true;
   return equippedItems("hands").includes("flashlight");
 }
-function canCompleteObjectives(){return S.bookDiscovered}
+function canCompleteObjectives(){return hasBookAccess()}
 function findField(id){return S.field.findIndex(x=>x.id===id)}
 function isReady(o){
   if(o.id==="camp") return (requirementAvailable("tent")||requirementAvailable("shelter")) && requirementAvailable("fire") && requirementAvailable("water");
@@ -1356,7 +1632,7 @@ function realtimeSpoilableIds(){return ["food","meat"]}
 function initFreshness(id){ensureRealtimeState();if(!realtimeSpoilableIds().includes(id))return;if(!Number.isFinite(S.freshness[id]))S.freshness[id]=100}
 function freshnessPercent(id){initFreshness(id);return S.freshness[id]}
 function tickRealtimeSystems(){
-  if(!S||!S.round)return;
+  if(!S||!S.round||S.paused||S.gameOver)return;
   ensureRealtimeState();
   const now=Date.now();let dt=(now-S.runtimeLastTick)/1000;S.runtimeLastTick=now;
   if(!Number.isFinite(dt)||dt<=0)return;dt=Math.min(dt,2);
@@ -1407,8 +1683,9 @@ function itemTooltipHtml(id){const c=cardDef(id);if(!c)return `<b>ITEM DESCONHEC
 function tooltipForItem(id){return itemTooltipHtml(id)}
 function positionTooltip(e,html){const tip=$("gameTooltip");if(!tip)return;tip.innerHTML=html;tip.classList.add("show");let x=e.clientX+14,y=e.clientY+14;const r=tip.getBoundingClientRect();if(x+r.width>innerWidth-8)x=Math.max(8,e.clientX-r.width-14);if(y+r.height>innerHeight-8)y=Math.max(8,e.clientY-r.height-14);tip.style.left=x+"px";tip.style.top=y+"px"}
 function hideGameTooltip(){const tip=$("gameTooltip");if(tip)tip.classList.remove("show")}
+function runtimeStatusPercent(id){if(id==="canteen")return Math.max(0,Math.min(100,Number(S.canteenWater)||0));const dur=itemDurabilityPercent(id);if(dur!==null)return dur;if(realtimeSpoilableIds().includes(id))return freshnessPercent(id);return null;}
 function renderLiveStatusOnly(){
-  document.querySelectorAll("[data-runtime-id]").forEach(el=>{const id=el.dataset.runtimeId;const status=statusForItem(id);const s=el.querySelector(".liveStatus");if(s)s.textContent=status;const bar=el.querySelector(".liveDur i");const dur=itemDurabilityPercent(id);if(bar&&dur!==null)bar.style.width=dur+"%";const fresh=el.querySelector(".liveDur.fresh i");if(fresh&&realtimeSpoilableIds().includes(id))fresh.style.width=freshnessPercent(id)+"%";});
+  document.querySelectorAll("[data-runtime-id]").forEach(el=>{const id=el.dataset.runtimeId;const status=statusForItem(id);const s=el.querySelector(".liveStatus");if(s)s.textContent=status;const bar=el.querySelector(".liveDur i");const pct=runtimeStatusPercent(id);if(bar&&pct!==null)bar.style.width=pct+"%";const fresh=el.querySelector(".liveDur.fresh i");if(fresh&&realtimeSpoilableIds().includes(id))fresh.style.width=freshnessPercent(id)+"%";});
   document.querySelectorAll("[data-structure-runtime]").forEach(el=>{const idx=Number(el.dataset.structureRuntime);const ev=S.events[idx];if(!ev)return;initStructureRuntime(ev);const isFire=ev.structureId==="fire";const bar=el.querySelector(".structureDur i");if(bar){bar.style.width=(isFire?fireFuelStatus(ev).pct:Math.max(0,Math.min(100,(ev.durability/(ev.durabilityMax||ev.max||1))*100)))+"%";}const meta=el.querySelector(".eventMeta");if(meta)meta.textContent=isFire?`DURAÇÃO ${Math.ceil(fireFuelStatus(ev).sec)}s • ${S.weather==="storm"?"⛈️ TEMPESTADE":S.weather==="rain"?"🌧️ CHUVA":S.weather==="drought"?"☀️ SOL":"☀️ ESTÁVEL"}`:`DURABILIDADE ${Math.ceil(ev.durability??ev.hp)}/${ev.durabilityMax||ev.max} • RODADA ${ev.round||S.round}`;});
 }
 
@@ -1420,10 +1697,10 @@ function renderCharacter(){
     const id=arr[0];
     const labels={head:"CABEÇA",back:"COSTAS",torso:"TRONCO",legs:"PERNAS",hands:"MÃOS",waist:"CINTURA",accessory:"ACESSÓRIO",feet:"PÉS",weapon:"ARMA"};
     el.classList.toggle("empty",!id);
-    el.dataset.runtimeId=id||"";el.removeAttribute("data-tooltip");el.innerHTML=id?`<b>${labels[slot]||slot.toUpperCase()}</b><div class="equipIcon">${C[id]?.i||'★'}</div><div class="equipName">${C[id]?.n||id}</div><div class="liveDur"><i style="width:${itemDurabilityPercent(id)??100}%"></i></div><div class="liveStatus">${statusForItem(id)}</div><button class="equipRemove" onclick="unequipItem('${slot}',0);event.stopPropagation()">RETIRAR</button>`:`<b>${labels[slot]||slot.toUpperCase()}</b><div class="equipIcon">◌</div><div class="equipName">VAZIO</div>`;if(id)el.dataset.tooltip=tooltipForItem(id);
+    el.dataset.runtimeId=id||"";el.removeAttribute("data-tooltip");el.innerHTML=id?`<b>${labels[slot]||slot.toUpperCase()}</b><div class="equipIcon">${C[id]?.i||'★'}</div><div class="equipName">${C[id]?.n||id}</div><div class="liveDur"><i style="width:${runtimeStatusPercent(id)??100}%"></i></div><div class="liveStatus">${statusForItem(id)}</div><button class="equipRemove" onclick="unequipItem('${slot}',0);event.stopPropagation()">RETIRAR</button>`:`<b>${labels[slot]||slot.toUpperCase()}</b><div class="equipIcon">◌</div><div class="equipName">VAZIO</div>`;if(id)el.dataset.tooltip=tooltipForItem(id);
     if(slot==="hands"||slot==="accessory"){
       const second=arr[1];
-      if(second)el.innerHTML+=`<div class="equipIcon" style="margin-top:2px">${C[second]?.i||'★'}</div><div class="equipName">${C[second]?.n||second}</div><div class="liveDur"><i style="width:${itemDurabilityPercent(second)??100}%"></i></div><div class="liveStatus">${statusForItem(second)}</div><button class="equipRemove" onclick="unequipItem('${slot}',1);event.stopPropagation()">RETIRAR 2</button>`;
+      if(second)el.innerHTML+=`<div class="equipIcon" style="margin-top:2px">${C[second]?.i||'★'}</div><div class="equipName">${C[second]?.n||second}</div><div class="liveDur"><i style="width:${runtimeStatusPercent(second)??100}%"></i></div><div class="liveStatus">${statusForItem(second)}</div><button class="equipRemove" onclick="unequipItem('${slot}',1);event.stopPropagation()">RETIRAR 2</button>`;
     }
   });
   // A silhueta se completa por camadas, exatamente no ponto físico do equipamento.
@@ -1601,8 +1878,15 @@ function craftBatch(id){
     for(let n=0;n<qty;n++){
       S.stars-=starCost;
       S.actions--;
-      if(addToHandOrStorage(id)!=="hand") throw new Error("Não foi possível colocar o item na mão.");
-      initFreshness(id); ensureItemDurability(id);
+      const prepared=!!r.requiresFire || ["trailMeal","cookedMeat","rehydration"].includes(id);
+      if(prepared){
+        if(!canInventoryReceive(id)) throw new Error("Não há espaço/peso suficiente no inventário para a refeição preparada.");
+        S.inventory.push(id); markSpoilage(id); initFreshness(id); ensureItemDurability(id);
+        log("🍲 "+C[id].n+" preparado e enviado automaticamente para o inventário.");
+      }else{
+        if(addToHandOrStorage(id)!=="hand") throw new Error("Não foi possível colocar o item na mão.");
+        initFreshness(id); ensureItemDurability(id);
+      }
       consumeOnCreation("montagem de "+r.n,0);
     }
   }catch(err){
@@ -1684,9 +1968,11 @@ function drawMain(){
   if(paid){if(S.actions<=0){log("⏱️ A compra adicional exige 1 ação.");return false}if(S.stars<1){log("⭐ Você precisa de 1 estrela para comprar outra carta.");return false}}
   if(S.hand.length>=handCapacity()){log("✋ Mão cheia. Guarde uma carta no inventário antes de comprar outra.");return false}
   let idx=S.deck.length-1,id=S.deck[idx],guard=0;
+  const urgentSpecial=S.round<=5?["map","book"].find(special=>!discoveredSpecial(special)&&!S.hand.includes(special)&&S.deck.includes(special)):null;
+  if(urgentSpecial){idx=S.deck.lastIndexOf(urgentSpecial);id=urgentSpecial;}
   while((id==="map"&&discoveredSpecial("map"))||(id==="book"&&discoveredSpecial("book"))){S.deck.splice(idx,1);if(!S.deck.length)break;idx=S.deck.length-1;id=S.deck[idx];if(++guard>40)break}
   if(!S.deck.length){openRefillDeckModal();return false}
-  S.deck.pop();
+  S.deck.splice(idx,1);
   if(!canCarry(id)){S.deck.push(id);log("🎒 Não há espaço/peso suficiente para receber "+C[id].n+".");return false}
   if(paid){S.stars--;S.actions--;S.paidDraws++}else S.freeDraw=false;
   S.hand.push(id);S.drawsThisRound++;
@@ -1716,18 +2002,43 @@ function startRefillDeck(){
 }
 
 function drawModifier(){
-  if(S.modHand||S.mods.length){log("⚡ Você já possui um modificador na mão ou ativo.");return false}
+  if(S.modHand){log("⚡ Você já possui um modificador na mão. Use ATIVAR ou MUDAR MODIFICADOR.");return false}
+  if(S.mods.length){log("⚡ Há um modificador ativo. Aguarde ele terminar para comprar outro.");return false}
   if(!S.modDeck.length)S.modDeck=shuffle(MOD_DECK);
   S.modHand=S.modDeck.pop();
-  log("⚡ Comprou "+C[S.modHand].n+" do deck de modificadores.");
+  S.modLastChangeRound=S.round;
+  S.modFreeChangeRound=S.round+2;
+  log("⚡ Um modificador foi comprado e está oculto na sua mão. Ative para revelar e aplicar o efeito.");
   render();return true
+}
+
+function changeModifier(){
+  if(!S.modHand){log("⚡ Não há modificador na mão para trocar.");return false}
+  if(S.mods.length){log("⚡ Não é possível trocar enquanto há um modificador ativo.");return false}
+  if(!S.modDeck.length)S.modDeck=shuffle(MOD_DECK);
+  const newId=S.modDeck.pop();
+  if(!newId){log("⚡ O deck de modificadores está vazio.");return false}
+  const cost=C[newId]?.cost||1;
+  const free=S.round>=Number(S.modFreeChangeRound||Infinity);
+  if(!free && S.stars<cost){
+    S.modDeck.push(newId);
+    log("⭐ Você precisa de "+cost+" estrelas para trocar o modificador imediatamente.");
+    return false;
+  }
+  if(!free){S.stars-=cost;log("⚡ Modificador trocado imediatamente por ⭐"+cost+". O novo modificador continua oculto.");}
+  else log("⚡ Modificador trocado gratuitamente após 2 rodadas. O novo modificador continua oculto.");
+  S.modHand=newId;
+  S.modLastChangeRound=S.round;
+  S.modFreeChangeRound=S.round+2;
+  render();
+  return true;
 }
 
 function useMapCard(){
   if(!S.mapDiscovered){
     if(isNight() && !equippedItems("hands").includes("flashlight")){
       log("🌙 O Mapa não pode ser consultado à noite sem uma Lanterna equipada.");
-      showModal("🌙 MAPA NO ESCURO","<p>O mapa foi encontrado, mas a noite impede a leitura.</p><p>Equipe uma <b>🔦 LANTERNA</b> e tente novamente.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');
+      showModal("🌙 MAPA NO ESCURO","<p>O mapa foi encontrado, mas a noite impede a leitura.</p><p>Unidade uma <b>🔦 LANTERNA</b> e tente novamente.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');
       return false;
     }
     S.mapDiscovered=true; S.grave.push("map"); purgeDiscoveredFromDeck();
@@ -1814,6 +2125,7 @@ function playModifier(){
   const id=S.modHand,c=C[id],cost=Math.max(0,c.cost+costPenalty());
   if(!canSpend(cost))return;
   S.stars-=cost;S.actions--;S.modHand=null;
+  S.modLastChangeRound=S.round;S.modFreeChangeRound=S.round+2;
   const target=MP.enabled ? MP.players[1-MP.active] : S;
   const td=target.difficulty||0; const duration=c.dur+(td>=1?Math.min(3,Math.floor(td/2)):0);
   target.mods=[{id,remaining:duration,costUp:id==="storm"||id==="drought",source:MP.enabled?MP.active:null}];
@@ -1865,7 +2177,7 @@ function rainCanteenRefill(){
 }
 function boilCanteenWater(){
   if(!fieldHas("fire")){log("🔥 É necessário ter uma Fogueira construída para ferver água.");return false;}
-  if(!hasEquippedCanteen()){log("🧴 Equipe um Cantil antes de ferver e armazenar água.");return false;}
+  if(!hasEquippedCanteen()){log("🧴 Unidade um Cantil antes de ferver e armazenar água.");return false;}
   if((S.resources.water||0)<=0){log("💧 Não há água coletada disponível para ferver.");return false;}
   if(S.actions<=0){log("⏱️ Ferver água exige 1 ação.");return false;}
   const cost=isNight()?2:1;
@@ -2091,8 +2403,8 @@ function objectiveCreate(o){
   if(!o){log("🎯 Objetivo inválido.");return false;}
   if(S.completed.includes(o.id)){log("🎯 Objetivo já concluído.");return false;}
   if(!S.mapDiscovered){log("🗺️ Consulte o Mapa antes de concluir objetivos.");return false;}
-  if(!objectivesUnlocked()){log("🌙 À noite, equipe uma 🔦 Lanterna para consultar e concluir objetivos.");return false;}
-  if(!S.bookDiscovered){log("📕 Encontre/consulte o Livro de Objetivos antes de concluir objetivos.");return false;}
+  if(!objectivesUnlocked()){log("🌙 À noite, Unidade uma 🔦 Lanterna para consultar e concluir objetivos.");return false;}
+  if(!hasBookAccess()){log("📕 Encontre/consulte o Livro de Objetivos antes de concluir objetivos.");return false;}
   if(S.actions<=0){log("⏱️ Completar objetivo exige 1 ação.");return false;}
   const actualReq=o.id==="camp"?[requirementAvailable("shelter")?"shelter":"tent","fire","water"]:[...o.req];
   const report=actualReq.map(id=>({id,ok:requirementAvailable(id),source:requirementSource(id)}));
@@ -2115,18 +2427,45 @@ function objectiveCreate(o){
   const power=Math.max(1,Math.min(6,Math.floor(total/1.5)));
   const event={id:o.id,title:o.event||o.n,desc:o.eventDesc||o.desc,icon:cardDef(o.res).i||"🎯",weather:o.weather||"stable",round:S.round,final:!!o.final};
 
-  // Toda construção criada vai para AMBIENTE / EVENTOS. Nenhuma estrutura ocupa SEU ACAMPAMENTO.
+  // Toda construção criada vai para AMBIENTE / EVENTOS.
+  // Upgrades/transformações substituem a estrutura anterior no mesmo espaço lógico.
+  const STRUCTURE_REPLACEMENTS={
+    shelter:["tent"],
+    waterSafe:["water"],
+    kitchen:["fire"],
+    camp:["tent","shelter","fire","water","waterSafe","kitchen"]
+  };
+  const replaceIds=o.res?STRUCTURE_REPLACEMENTS[o.res]||[]:[];
   if(o.res && C[o.res]?.struct){
-    if(structureEvents().length>=5){log("🏕️ AMBIENTE / EVENTOS está cheio. Libere um espaço antes de construir "+C[o.res].n+".");S.field=JSON.parse(snapshot.field);S.hand=[...snapshot.hand];S.inventory=[...snapshot.inventory];S.backpackStorage=[...snapshot.backpack];S.equipment=JSON.parse(snapshot.equipment);return false;}
+    const currentCount=structureEvents().length;
+    const removableCount=S.events.filter(ev=>isStructureEvent(ev)&&replaceIds.includes(ev.structureId||ev.id)).length;
+    if(currentCount-removableCount>=5){log("🏕️ AMBIENTE / EVENTOS está cheio. Libere um espaço antes de construir "+C[o.res].n+".");S.field=JSON.parse(snapshot.field);S.hand=[...snapshot.hand];S.inventory=[...snapshot.inventory];S.backpackStorage=[...snapshot.backpack];S.equipment=JSON.parse(snapshot.equipment);return false;}
+    // Remove a estrutura anterior antes de criar a nova. Isto evita Barraca + Abrigo Reforçado duplicados.
+    if(replaceIds.length){
+      const removed=S.events.filter(ev=>isStructureEvent(ev)&&replaceIds.includes(ev.structureId||ev.id));
+      if(removed.length){
+        S.events=S.events.filter(ev=>!(isStructureEvent(ev)&&replaceIds.includes(ev.structureId||ev.id)));
+        removed.forEach(ev=>log("🛠️ "+(C[ev.structureId]?.n||ev.title)+" foi substituída por "+C[o.res].n+"."));
+      }
+    }
     const baseRes=C[o.res].baseRes||6;event.kind="structure";event.structureId=o.res;event.title=C[o.res].n;event.icon=C[o.res].i;event.desc=o.eventDesc||C[o.res].d;event.value=power;event.level=1;event.materials=[...actualReq];event.max=baseRes;event.hp=baseRes;event.durabilityMax=baseRes;event.durability=baseRes;event.runtimeLastTick=Date.now();if(o.res==="fire"){event.fuelSeconds=180;event.fuelMaxSeconds=300;}event.protection=o.res==="shelter"?"VENTANIA -2 DANO":o.res==="waterSafe"?"CHUVA -1 DANO":"";
   }
   S.events.unshift(event);S.events=S.events.slice(0,5);S.activeEvent=event.id;
   S.actions--;S.completed.push(o.id);consumeOnCreation("conclusão de "+o.n,power);S.weather=event.weather;
   if(o.final){
-    S.victory=true;S.gameOver=true;
-    showModal("🏕️ EXPEDIÇÃO CONCLUÍDA",`<p><b>ACAMPAMENTO COMPLETO</b></p><p>Abrigo, fogo e água foram estabelecidos e registrados em AMBIENTE / EVENTOS.</p><p>O objetivo final da expedição foi concluído.</p>`,`<div class="modalActions"><button class="btn gold" onclick="closeModal();render()">CONTINUAR NO ACAMPAMENTO</button></div>`);
+    S.victory=false;S.gameOver=false;S.campCompleted=true;S.duelUnlocked=true;S.advancedMapsUnlocked=true;
+    log("🏕️ ACAMPAMENTO COMPLETO! A expedição continua. Novos biomas reais e DUELO foram desbloqueados.","alert");
+    showModal("🏕️ ACAMPAMENTO COMPLETO",`<p><b>A base está pronta.</b></p><p>O Acampamento Completo não encerra a partida. Ele prepara a Unidade para regiões mais exigentes.</p><p>🗺️ Novos biomas reais desbloqueados: <b>Mata Atlântica, Cerrado, Caatinga, Amazônia e Pantanal</b>.</p><p>⚔️ O <b>DUELO</b> agora está disponível.</p>`,`<div class="modalActions"><button class="btn gold" onclick="closeModal();render();openMapScreen()">EXPLORAR NOVOS BIOMAS</button><button class="btn danger" onclick="closeModal();openDuelModal()">⚔️ DUELO</button></div>`);
   }
   animateFusion(o.res);log("✨ "+o.n+" concluído e enviado para AMBIENTE / EVENTOS. Poder gerado: ⭐"+power+".");checkReady();render();return true;
+}
+
+function notifyObjectiveReady(o){
+  if(!o||S.completed.includes(o.id)||!objectivesUnlocked())return;
+  if(!S.readyObjectiveNotified)S.readyObjectiveNotified=new Set();
+  if(S.readyObjectiveNotified.has(o.id))return;
+  S.readyObjectiveNotified.add(o.id);
+  setTimeout(()=>showObjectiveBird(o),40);
 }
 
 function checkReady(){
@@ -2135,7 +2474,8 @@ function checkReady(){
     if(!S.completed.includes(o.id)&&isReady(o)&&!S.notified.has(o.id)){
       S.notified.add(o.id);
       if(unlocked){
-        toast("OBJETIVO DISPONÍVEL",o.n+" já pode ser concluído.",()=>openObjective(o.id));
+        notifyObjectiveReady(o);
+        toast("OBJETIVO DISPONÍVEL",o.n+" já pode ser concluído.",()=>openObjectivesModal());
         log("✨ "+o.n+" pode ser concluído. Você decide quando.");
       }else{
         toast("NOVO OBJETIVO DESCOBERTO","Você encontrou os recursos de um objetivo. Encontre um MAPA para revelar o objetivo.",()=>{});
@@ -2148,8 +2488,8 @@ function checkReady(){
 function openObjective(id){
   const o=activeObjective(id);
   if(!o){log("🎯 Objetivo inválido.");return;}
-  if(!S.mapDiscovered){showModal("🗺️ MAPA NECESSÁRIO","<p>Use um <b>Mapa</b> para revelar os objetivos.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');return;}
-  if(!objectivesUnlocked()){showModal("🌙 OBJETIVOS NO ESCURO","<p>Durante a noite, equipe uma <b>🔦 Lanterna</b> para consultar os objetivos.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');return;}
+  if(!hasMapAccess()){showModal("🗺️ MAPA NECESSÁRIO","<p>Use um <b>Mapa</b> para revelar os objetivos.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');return;}
+  if(!objectivesUnlocked()){showModal("🌙 OBJETIVOS NO ESCURO","<p>Durante a noite, Unidade uma <b>🔦 Lanterna</b> para consultar os objetivos.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');return;}
   if(!canCompleteObjectives()){showModal("📕 LIVRO NECESSÁRIO",`<p>Você pode visualizar o objetivo com o <b>Mapa</b>, mas precisa encontrar o <b>Livro de Objetivos</b> para habilitar sua conclusão.</p><p>Procure o livro no inventário ou em novas cartas.</p>`,`<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>`);return;}
   showModal("CONFIRMAR OBJETIVO",
     `<p><b>${o.n}</b></p><p>${o.desc}</p><p>Requisitos: <b>${o.req.map(id=>C[id].n).join(" + ")}</b></p><p>Conclusão gera um bônus controlado de estrelas, respeitando o teto de ⭐8.</p>`,
@@ -2158,25 +2498,38 @@ function openObjective(id){
 
 function showInitialShuffleThenDeal(){
   if(S.inventoryShuffleDone)return;
-  showModal("SORTEIO DA EXPEDIÇÃO",`<div class="shufflePrompt"><div class="shuffleDeck">${Array.from({length:5},()=>`<div class="shuffleCard"></div>`).join('')}</div><b style="color:#f3cf65">MISSÃO DEFINIDA: ${C[activeObjective(S.firstObjective)?.res]?.n||"EXPEDIÇÃO"}</b><p>O sorteio inicial acontece quando você clicar em <b>EMBARALHAR</b>.</p><div class="modalActions"><button class="btn" onclick="closeModal();chooseFirstObjective()">VOLTAR</button><button class="btn gold" onclick="runInitialShuffle()">🔀 EMBARALHAR</button></div></div>`);
+  showModal("SORTEIO DA EXPEDIÇÃO",`<div class="shufflePrompt"><div class="shuffleDeck">${Array.from({length:5},()=>`<div class="shuffleCard"></div>`).join('')}</div><b style="color:#f3cf65">MISSÃO DEFINIDA: ${activeObjective(S.firstObjective)?.n||"EXPEDIÇÃO"}</b><p>O sorteio inicial acontece quando você clicar em <b>EMBARALHAR</b>.</p><div class="modalActions"><button class="btn" onclick="closeModal();chooseFirstObjective()">VOLTAR</button><button class="btn gold" onclick="runInitialShuffle()">🔀 EMBARALHAR</button></div></div>`);
 }
 function runInitialShuffle(){
   if(S.inventoryShuffleDone)return;
   S.inventoryShuffleDone=true;
-  const old=document.querySelector('#modal .modalActions');if(old)old.innerHTML='';
   const body=document.querySelector('#modal');
-  if(body){body.classList.add('shuffleModal');body.innerHTML=`<div class="shufflePrompt shuffleRun"><div class="shuffleDeck">${Array.from({length:7},()=>`<div class="shuffleCard"></div>`).join('')}</div><b style="color:#f3cf65">EMBARALHANDO A EXPEDIÇÃO...</b><p>Preparando seu inventário inicial.</p></div>`;}
+  if(!body)return;
+  body.classList.add('shuffleModal');
+  body.innerHTML=`<div class="shufflePrompt shuffleRun"><div class="shuffleDeck oneWayShuffle">${Array.from({length:7},(_,i)=>`<div class="shuffleCard" style="--i:${i}"></div>`).join('')}</div><b style="color:#f3cf65">EMBARALHANDO A EXPEDIÇÃO...</b><p>Preparando as cartas para sua aventura</p><div class="shuffleProgress"><div class="shuffleProgressBar" id="shuffleProgressBar"></div></div><div class="shufflePercent" id="shufflePercent">0%</div></div>`;
+  const duration=3000, started=performance.now();
+  const tick=(now)=>{
+    const pct=Math.min(100,Math.round(((now-started)/duration)*100));
+    const bar=document.getElementById('shuffleProgressBar'),label=document.getElementById('shufflePercent');
+    if(bar)bar.style.width=pct+'%'; if(label)label.textContent=pct+'%';
+    if(pct<100)requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
   setTimeout(()=>{
     const count=Math.min(5,handCapacity());
-    for(let i=0;i<count;i++){
+    const guaranteed=["map","book"].filter(id=>!discoveredSpecial(id));
+    guaranteed.forEach(id=>{const idx=S.deck.lastIndexOf(id);if(idx>=0)S.deck.splice(idx,1);});
+    guaranteed.slice(0,Math.max(0,count)).forEach(id=>S.hand.push(id));
+    let remaining=count-S.hand.length;
+    while(remaining>0){
       purgeDiscoveredFromDeck();
       if(!S.deck.length)refillDeckFromBase(30);
-      let id=S.deck.pop(); if(id&&canHandReceive(id))S.hand.push(id);
+      const id=S.deck.pop(); if(id&&canHandReceive(id)){S.hand.push(id);remaining--;}else break;
     }
     closeModal();
     log("🎴 Sorteio inicial concluído. "+S.hand.length+" cartas foram para a mão.");
     render();
-  },5000);
+  },duration);
 }
 
 function chooseFirstObjective(){
@@ -2342,17 +2695,49 @@ function openFieldActions(i){
   if(x.id==="water"||x.id==="waterSafe")actions.push(`<button class="btn green" onclick="closeModal();consumeWater('field',${i})">💧 BEBER ⭐1</button>`);
   showModal("AÇÕES • "+c.n,`<p>${c.s}</p><div class="actionModalGrid">${actions.join('')}</div>`);
 }
+const STRUCTURE_UPGRADES={
+  tent:{to:"shelter",requires:["stakes","hammer"],cost:1},
+  water:{to:"waterSafe",requires:["filter"],cost:1},
+  fire:{to:"kitchen",requires:["cookingPot"],cost:1}
+};
+function findOwnedComponent(id){
+  if(S.hand.includes(id))return {zone:"hand",index:S.hand.indexOf(id)};
+  if(S.inventory.includes(id))return {zone:"inventory",index:S.inventory.indexOf(id)};
+  if(S.backpackStorage.includes(id))return {zone:"backpack",index:S.backpackStorage.indexOf(id)};
+  return null;
+}
+function canAccessTool(id){return !!(equippedItems("accessory").includes(id)||equippedItems("weapon").includes(id)||equippedItems("hands").includes(id)||S.inventory.includes(id)||S.backpackStorage.includes(id)||S.hand.includes(id));}
+function consumeOwnedComponents(ids){
+  const snap={hand:[...S.hand],inventory:[...S.inventory],backpack:[...S.backpackStorage]};
+  try{for(const id of ids){const ref=findOwnedComponent(id);if(!ref)throw new Error("Componente indisponível: "+cardDef(id).n);if(ref.zone==="hand")S.hand.splice(ref.index,1);else if(ref.zone==="inventory")S.inventory.splice(ref.index,1);else S.backpackStorage.splice(ref.index,1);}return true;}catch(e){S.hand=snap.hand;S.inventory=snap.inventory;S.backpackStorage=snap.backpack;return false;}
+}
+function animateUpgradeDust(targetEl){
+  const fx=$("dustFX");if(!fx)return;const r=targetEl?.getBoundingClientRect?.();if(r){fx.style.left=(r.left+r.width/2)+"px";fx.style.top=(r.top+r.height/2)+"px";}else{fx.style.left="50%";fx.style.top="50%";}fx.classList.remove("go");void fx.offsetWidth;fx.classList.add("go");setTimeout(()=>fx.classList.remove("go"),950);
+}
+function upgradeConstruction(index){
+  const ev=S.events[index],id=ev?.structureId||ev?.id,up=STRUCTURE_UPGRADES[id];
+  if(!isStructureEvent(ev)||!up||!C[up.to]){log("⬆️ Esta construção não possui um upgrade disponível.");return false;}
+  if(S.actions<=0||S.stars<up.cost){log("⬆️ Upgrade exige 1 ação e ⭐"+up.cost+".");return false;}
+  if(!up.requires.every(canAccessTool)){log("🧰 Faltam ferramentas/componentes para melhorar "+C[id].n+": "+up.requires.map(x=>C[x].n).join(" + ")+".");return false;}
+  const beforeIndex=index;
+  if(!consumeOwnedComponents(up.requires))return false;
+  S.stars-=up.cost;S.actions--;
+  const base=C[up.to];
+  ev.structureId=up.to;ev.title=base.n;ev.desc=base.d;ev.icon=base.i;ev.level=(ev.level||1)+1;ev.max=base.baseRes||ev.durabilityMax||8;ev.durabilityMax=ev.max;ev.durability=ev.max;ev.hp=ev.max;ev.value=(ev.value||base.cost||1)+1;ev.materials=[...(ev.materials||[]),...up.requires];ev.runtimeLastTick=Date.now();ev.fuelSeconds=up.to==="kitchen"?undefined:ev.fuelSeconds;
+  const slot=document.querySelectorAll(".zone.enemy .slot")[beforeIndex];animateUpgradeDust(slot);log("⬆️ "+C[id].n+" evoluiu para "+base.n+". A nova estrutura começa com 100% de durabilidade.");render();return true;
+}
 function openConstructionActions(index){
   const ev=S.events[index];if(!isStructureEvent(ev))return;
   const id=ev.structureId||ev.id,c=C[id];if(!c)return;
   const actions=[`<button class="btn danger" onclick="closeModal();dismantleConstruction(${index})">🧩 DESMONTAR</button>`,`<button class="btn gold" onclick="closeModal();sellConstruction(${index})">💰 VENDER</button>`];
+  if(STRUCTURE_UPGRADES[id]){const up=STRUCTURE_UPGRADES[id];actions.unshift(`<button class="btn gold" onclick="closeModal();upgradeConstruction(${index})">⬆️ MELHORAR PARA ${C[up.to].n}</button>`);}
   if(id==="fire")actions.push(`<button class="btn gold" onclick="closeModal();openCraftModal()">🔥 COZINHAR</button>`,`<button class="btn green" onclick="closeModal();boilCanteenWater()">♨️ FERVER ÁGUA</button>`,`<button class="btn" onclick="closeModal();fuelFireFromItem('wood')">🪵 ABASTECER COM MADEIRA</button>`,`<button class="btn" onclick="closeModal();fuelFireFromItem('paper')">📜 ABASTECER COM PAPEL</button>`);
   if((id==="water"||id==="waterSafe")&&hasEquippedCanteen())actions.push(`<button class="btn green" onclick="closeModal();refillCanteen(100,'Reserva de água construída')">💧 ABASTECER CANTIL</button>`);
   if(id!=="fire" && (ev.hp??ev.max)>0 && ev.hp<ev.max)actions.push(`<button class="btn" onclick="closeModal();repairConstruction(${index})">🔧 REPARAR ⭐${1+costPenalty()}</button>`);
   initStructureRuntime(ev);const status=ev.structureId==="fire"?`<b>DURAÇÃO ${Math.ceil(fireFuelStatus(ev).sec)}s / ${ev.fuelMaxSeconds||300}s</b>`:`<b>DURABILIDADE ${Math.ceil(ev.durability??ev.hp)}/${Math.ceil(ev.durabilityMax??ev.max)}</b>`;showModal("🏗️ CONSTRUÇÃO • "+c.n,`<p>${c.s}</p><p>${status}</p><div class="liveDur ${ev.structureId==="fire"?'fire':''}"><i style="width:${ev.structureId==="fire"?fireFuelStatus(ev).pct:Math.max(0,Math.min(100,(ev.durability/(ev.durabilityMax||ev.max))*100))}%"></i></div><div class="actionModalGrid">${actions.join('')}</div>`);
 }
 function removeConstruction(index){const ev=S.events[index];if(!isStructureEvent(ev))return null;S.events.splice(index,1);if(S.activeEvent===ev.id)S.activeEvent=S.events[0]?.id||null;return ev;}
-function repairConstruction(index){const ev=S.events[index],c=C[ev?.structureId||ev?.id];if(!isStructureEvent(ev)||!c)return false;if(ev.structureId==="fire"){log("🔥 Use Madeira ou Papel para aumentar a duração da Fogueira.");return false}initStructureRuntime(ev);if(ev.durability>=ev.durabilityMax)return false;const cost=1+costPenalty();if(!canSpend(cost))return false;S.stars-=cost;S.actions--;ev.durability=Math.min(ev.durabilityMax,ev.durability+1);ev.hp=ev.durability;log("🔧 "+c.n+" reparada em +1 durabilidade por ⭐"+cost+".");render();return true;}
+function repairConstruction(index){const ev=S.events[index],c=C[ev?.structureId||ev?.id];if(!isStructureEvent(ev)||!c)return false;if(ev.structureId==="fire"){log("🔥 Use Madeira ou Papel para aumentar a duração da Fogueira.");return false}initStructureRuntime(ev);if(ev.durability>=ev.durabilityMax)return false;const cost=1+costPenalty();if(!canSpend(cost))return false;S.stars-=cost;S.actions--;const repairGain=Math.max(1,ev.durabilityMax*0.2);ev.durability=Math.min(ev.durabilityMax,ev.durability+repairGain);ev.hp=ev.durability;log("🔧 "+c.n+" reparada em +"+Math.round((repairGain/(ev.durabilityMax||1))*100)+"% por ⭐"+cost+".");render();return true;}
 function dismantleConstruction(index){const ev=S.events[index],c=C[ev?.structureId||ev?.id];if(!isStructureEvent(ev)||!c)return;const cost=1+costPenalty();if(S.stars<cost||S.actions<=0){log("🧩 Desmontar exige ⭐"+cost+" e 1 ação.");return;}showModal("DESMONTAR "+c.n,`<p>Destruir esta construção consome <b>⭐${cost}</b> e <b>1 ação</b>.</p><p>Parte dos materiais poderá ser recuperada.</p>`,`<div class="modalActions"><button class="btn" onclick="closeModal()">CANCELAR</button><button class="btn danger" onclick="confirmDismantleConstruction(${index})">DESTRUIR</button></div>`);}
 function confirmDismantleConstruction(index){const ev=S.events[index],c=C[ev?.structureId||ev?.id];if(!isStructureEvent(ev)||!c){closeModal();return;}const cost=1+costPenalty();if(S.stars<cost||S.actions<=0){closeModal();return;}S.stars-=cost;S.actions--;removeConstruction(index);const pools={tent:["rope","tarp","stakes"],fire:["wood","matches"],water:["bucket","canteen"],shelter:["rope4","tarp4","stakes","hammer"],waterSafe:["bucket","canteen","filter"],trap:["wood","rope","stakes"],camp:["rope","tarp","wood","matches","bucket","canteen"]};const pool=pools[c.id]||[c.id],count=Math.max(1,Math.min(3,Math.ceil((ev.value||c.cost||2)/2)));const got=[];for(let n=0;n<count;n++){const id=pool[Math.floor(Math.random()*pool.length)];if(C[id]){addToHandOrStorage(id);got.push(id);}}closeModal();log("🧩 "+c.n+" desmontada. Recuperados: "+got.map(id=>C[id].n).join(", ")+".");render();}
 function sellConstruction(index){const ev=S.events[index],c=C[ev?.structureId||ev?.id];if(!isStructureEvent(ev)||!c)return;if(S.actions<=0){log("⏱️ Vender exige 1 ação.");return;}const value=Math.max(1,Math.floor((ev.value||c.cost||1)/2));showModal("VENDER "+c.n,`<p>Receba ⭐${value} por esta construção.</p>`,`<div class="modalActions"><button class="btn gold" onclick="confirmSellConstruction(${index})">⭐ VENDER</button><button class="btn" onclick="closeModal()">CANCELAR</button></div>`);}
@@ -2366,25 +2751,33 @@ function renderField(){
   const active=S.activeEvent&&S.events.find(e=>e.id===S.activeEvent);const weatherLabel=(isNight()?"🌙 NOITE • ":"")+(S.weather==="rain"?"🌧️ CHUVA":S.weather==="storm"?"⛈️ TEMPESTADE":S.weather==="drought"?"☀️ SOL":"☀️ TEMPO ESTÁVEL");$("centerTitle").textContent=active?active.title:"Construa, sobreviva e cumpra objetivos.";$("centerText").textContent=active?active.desc:"Escolha recursos, complete objetivos e prepare o acampamento.";$("centerEventMeta").textContent=active?weatherLabel+" • EVENTO ATIVO • RODADA "+(active.round||S.round):weatherLabel+" • SEM EVENTO ATIVO";$("expeditionBox").classList.toggle("hasEvent",!!active);
 }
 
-function renderTargets(){
-  const e=$("targets");e.innerHTML="";
+function objectiveCardsHTML(){
   const unlocked=objectivesUnlocked();
-  const discovered=[...S.notified].filter(id=>!S.completed.includes(id));
   if(!unlocked){
     const night=isNight();
-    e.innerHTML=`<div class="objectiveLock"><b>🗺️ OBJETIVOS OCULTOS</b><p>Encontre um <b>MAPA</b> para revelar o quadro completo.${night?" Nesta noite, você precisa de <b>MAPA + LANTERNA</b> para consultar os objetivos.":""}</p>
-      ${discovered.length?`<div class="discoveredReq"><strong>RECURSOS DESCOBERTOS</strong>${discovered.map(id=>{const o=activeObjective(id);return `<div>○ ${o.req.map(r=>C[r].n).join(" + ")}</div>`}).join("")}</div>`:""}</div>`;
-    return;
+    const discovered=[...S.notified].filter(id=>!S.completed.includes(id));
+    return `<div class="objectiveLock"><b>🗺️ OBJETIVOS OCULTOS</b><p>Encontre um <b>MAPA</b> para revelar o quadro completo.${night?" Nesta noite, você precisa de <b>MAPA + LANTERNA</b> para consultar os objetivos.":""}</p>${discovered.length?`<div class="discoveredReq"><strong>RECURSOS DESCOBERTOS</strong>${discovered.map(id=>{const o=activeObjective(id);return `<div>○ ${o.req.map(r=>C[r].n).join(" + ")}</div>`}).join("")}</div>`:""}</div>`;
   }
-  OBJECTIVES.forEach(o=>{
-    if(S.completed.includes(o.id))return;
-    const ready=isReady(o),d=document.createElement("div");d.className="target"+(ready?" ready":"");
-    d.innerHTML=`<div class="targetHead"><b>${o.n}</b><span>⭐${Math.min(6,o.reward)}</span></div><p>${o.desc}</p><div class="req">${o.req.map(id=>`${hasResource(id)?"✓":"○"} ${C[id].n}`).join(" • ")}</div>
-      ${ready?(canCompleteObjectives()?`<button class="btn gold">COMPLETAR OBJETIVO</button>`:`<div class="objectiveLockedAction">📕 Encontre o LIVRO DE OBJETIVOS para poder cumprir este objetivo.</div>`):""}`;
-    const btn=d.querySelector("button");
-    if(btn)btn.onclick=()=>openObjective(o.id);
-    e.appendChild(d);
-  });
+  return OBJECTIVES.map(o=>{
+    if(S.completed.includes(o.id))return "";
+    const ready=isReady(o);
+    return `<div class="target${ready?" ready":""}"><div class="targetHead"><b>${o.n}</b><span>⭐${Math.min(6,o.reward)}</span></div><p>${o.desc}</p><div class="req">${o.req.map(id=>`${hasResource(id)?"✓":"○"} ${C[id].n}`).join(" • ")}</div>${ready?(canCompleteObjectives()?`<button class="btn gold" onclick="openObjective('${o.id}')">COMPLETAR OBJETIVO</button>`:`<div class="objectiveLockedAction">📕 Encontre o LIVRO DE OBJETIVOS para poder cumprir este objetivo.</div>`):""}</div>`;
+  }).join("");
+}
+
+function openObjectivesModal(){
+  showModal("🎯 OBJETIVOS DA EXPEDIÇÃO",`<div id="objectivePopupList">${objectiveCardsHTML()}</div>`,`<div class="modalActions"><button class="btn" onclick="closeModal()">FECHAR</button></div>`);
+}
+
+function renderTargets(){
+  const e=$("objectiveSummary");
+  if(!e)return;
+  const unlocked=objectivesUnlocked();
+  const pending=OBJECTIVES.filter(o=>!S.completed.includes(o.id));
+  const ready=pending.filter(isReady);
+  e.classList.toggle("ready",ready.length>0);
+  if(unlocked)ready.forEach(notifyObjectiveReady);
+  e.textContent=!unlocked?"Objetivos ocultos • use o MAPA para revelar.":ready.length?ready.length+" objetivo(s) pronto(s) para finalizar.":pending.length+" objetivo(s) em acompanhamento.";
 }
 
 function renderMods(){
@@ -2395,16 +2788,30 @@ function renderMods(){
 
 function renderModifier(){
   $("modDeckCount").textContent=S.modDeck.length;
-  const status=$("modStatus"),preview=$("modPreview"),btn=$("modButton");
-  preview.innerHTML="";
+  const status=$("modStatus"),actions=$("modActions"),btn=$("modButton");
+  if(!status||!actions||!btn)return;
+  actions.innerHTML="";
+  btn.disabled=false;
   if(S.modHand){
-    const c=C[S.modHand];status.textContent="🃏 Na mão: "+c.n+" • ative para liberar a compra futura.";
-    preview.innerHTML=`<div class="card modCard" style="min-height:180px;cursor:pointer"><div class="cost">⭐${c.cost}</div><div class="type">${c.type}</div><div class="art">${c.i}</div><div class="rarity">${c.type}</div><div class="name">${c.n}</div><div class="desc">${c.d}</div><div class="foot">${c.s}</div></div>`;
-    preview.firstElementChild.onclick=playModifier;btn.textContent="ATIVAR MODIFICADOR";btn.className="btn gold buyBtn";
+    const free=S.round>=Number(S.modFreeChangeRound||Infinity);
+    status.textContent=free?"🃏 1 modificador oculto na mão • troca gratuita disponível.":"🃏 1 modificador oculto na mão • nova troca grátis na rodada "+S.modFreeChangeRound+".";
+    btn.textContent="ATIVAR";
+    btn.className="btn gold buyBtn";
+    const change=document.createElement("button");
+    change.className="btn";
+    change.textContent=free?"MUDAR • GRÁTIS":"MUDAR MODIFICADOR";
+    change.onclick=changeModifier;
+    actions.appendChild(change);
   }else if(S.mods.length){
-    status.textContent="⚠️ Modificador ativo. Aguarde terminar para comprar outro.";btn.textContent="AGUARDANDO";btn.className="btn buyBtn";btn.disabled=true;
+    const m=S.mods[0],c=C[m.id];
+    status.textContent="⚠️ "+c.n+" ativo • "+m.remaining+" rodada(s) restante(s).";
+    btn.textContent="AGUARDANDO";
+    btn.className="btn buyBtn";
+    btn.disabled=true;
   }else{
-    status.textContent="Nenhum modificador na mão ou ativo.";btn.textContent="COMPRAR MODIFICADOR";btn.className="btn gold buyBtn";btn.disabled=false;
+    status.textContent="Nenhum modificador na mão ou ativo.";
+    btn.textContent="COMPRAR MODIFICADOR";
+    btn.className="btn gold buyBtn";
   }
 }
 
@@ -2452,9 +2859,60 @@ function render(){
   renderCharacter();renderHand();renderField();renderTargets();renderMods();renderModifier();renderResources();
   $("buyCard").textContent=S.drawsThisRound===0?"COMPRAR CARTA • GRÁTIS":"COMPRAR CARTA • ⭐1 + 1 AÇÃO";
   $("buyCard").disabled=S.hand.length>=handCapacity()||S.drawsThisRound>=2||(S.drawsThisRound>0&&(S.actions<=0||S.stars<1));
-  $("endRound").disabled=S.gameOver;
+  $("endRound").disabled=S.gameOver||S.paused;
+  const autoBtn=$("autoButton");if(autoBtn){autoBtn.classList.toggle("autoOn",!!S.autoGame);autoBtn.textContent=S.autoGame?"⏹️":"🤖";autoBtn.title=S.autoGame?"Desativar Autogame":"Autogame: jogar automaticamente";}
+  const duelBtn=$("duelButton");if(duelBtn){duelBtn.style.display=S.duelUnlocked?"inline-grid":"none";duelBtn.classList.toggle("duelReady",!!S.duelUnlocked);}
 }
 
+const AREA_MAPS={
+  forest:{icon:"🌲",name:"MAPA • MATA DE COLETA",desc:"Trilhas para lenha, fibras, frutas e pequenos materiais.",req:["hatchet"],alt:["machete"],rewards:["wood","fiber","food"],amount:2},
+  grove:{icon:"🍓",name:"MAPA • POMAR SILVESTRE",desc:"Área de frutas, sementes e pequenos recursos alimentares.",req:["machete"],alt:["spear"],rewards:["food","fiber"],amount:2},
+  cache:{icon:"🧰",name:"MAPA • DEPÓSITO DE APOIO",desc:"Ponto de materiais menores, fixadores e suprimentos de construção.",req:["hammer"],alt:["buildingKit"],rewards:["metal","nails","screws","wire","paper"],amount:2}
+};
+const ADVANCED_BIOMES={
+  mataAtlantica:{icon:"🌳",name:"BIOMA • MATA ATLÂNTICA",desc:"Floresta úmida e diversa, com trilhas, madeira, fibras, frutas e água de nascente.",req:["machete"],alt:["hatchet"],rewards:["wood","fiber","fruit","water","bamboo"],amount:3},
+  cerrado:{icon:"🌾",name:"BIOMA • CERRADO",desc:"Savana brasileira com vegetação resistente, sementes, frutos e áreas de solo argiloso.",req:["machete"],alt:["hatchet"],rewards:["wood","fiber","seeds","fruit","clay"],amount:3},
+  caatinga:{icon:"🌵",name:"BIOMA • CAATINGA",desc:"Região semiárida com recursos vegetais, madeira e pontos de água que exigem planejamento.",req:["hatchet"],alt:["machete"],rewards:["wood","fiber","seeds","water"],amount:3},
+  amazonia:{icon:"🌴",name:"BIOMA • AMAZÔNIA",desc:"Floresta tropical com alta disponibilidade de madeira, fibras, frutas, bambu e água.",req:["machete"],alt:["hatchet"],rewards:["wood","fiber","fruit","water","bamboo"],amount:4},
+  pantanal:{icon:"🐊",name:"BIOMA • PANTANAL",desc:"Planície alagável com áreas úmidas, recursos vegetais, frutos e água.",req:["machete"],alt:["spear"],rewards:["water","fruit","fiber","seeds","wood"],amount:4}
+};
+function compassAccessible(){return equippedItems("accessory").includes("compass")||S.backpackStorage.includes("compass");}
+function revealAreaMaps(){
+  if(!compassAccessible())return false;
+  S.areaMaps=S.areaMaps||{};
+  Object.keys(AREA_MAPS).forEach(k=>S.areaMaps[k]=true);
+  if(S.campCompleted||S.advancedMapsUnlocked)Object.keys(ADVANCED_BIOMES).forEach(k=>S.areaMaps[k]=true);
+  return true;
+}
+function toolAvailable(ids){return ids.some(id=>canAccessTool(id));}
+function collectAreaMap(key){
+  const map=AREA_MAPS[key]||ADVANCED_BIOMES[key];if(!map)return false;
+  const advanced=!!ADVANCED_BIOMES[key];
+  if(advanced && !(S.campCompleted||S.advancedMapsUnlocked)){log("🏕️ Complete o Acampamento Completo para acessar este bioma.");return false;}
+  if(!compassAccessible()){log("🧭 Equipe ou guarde uma Bússola na mochila para revelar os mapas de exploração.");return false;}
+  if(!toolAvailable([...(map.req||[]),...(map.alt||[])])){log("🧰 Ferramenta necessária: "+[...(map.req||[]),...(map.alt||[])].map(id=>C[id]?.n||id).join(" ou ")+".");return false;}
+  if(S.actions<=0){log("⏱️ Explorar um mapa exige 1 ação.");return false;}
+  S.actions--;S.areaMapUses[key]=(S.areaMapUses[key]||0)+1;
+  const gains=[];for(let i=0;i<map.amount;i++){const id=map.rewards[Math.floor(Math.random()*map.rewards.length)];if(RESOURCE_TYPES[id]){S.resources[id]=(S.resources[id]||0)+1;gains.push(RESOURCE_TYPES[id].n);}else if(C[id]){if(canInventoryReceive(id))S.inventory.push(id);else if(canHandReceive(id))S.hand.push(id);else S.grave.push(id);gains.push(C[id].n);}}
+  log("🗺️ "+map.name+" explorado. Encontrados: "+gains.join(", ")+".","gather");render();openMapScreen();return true;
+}
+function openMapScreen(){
+  revealAreaMaps();
+  const basic=Object.entries(AREA_MAPS).map(([key,m])=>({key,m,advanced:false}));
+  const advanced=Object.entries(ADVANCED_BIOMES).map(([key,m])=>({key,m,advanced:true}));
+  const all=[...basic,...advanced];
+  const maps=all.map(({key,m,advanced})=>{
+    const revealed=!!S.areaMaps?.[key];
+    const locked=advanced && !(S.campCompleted||S.advancedMapsUnlocked);
+    const toolText=[...(m.req||[]),...(m.alt||[])].map(id=>C[id]?.n||id).join(" ou ");
+    const title=advanced?"🌎 "+m.name:m.name;
+    const body=locked?"Complete o Acampamento Completo para acessar este bioma.":m.desc;
+    return `<div class="exploreMapCard ${advanced?'advancedBiome':''}"><div style="font-size:25px">${m.icon}</div><h3>${title}</h3><p>${body}</p><small>🧰 Necessário: ${toolText}</small><small>🔎 Explorações: ${S.areaMapUses?.[key]||0}</small>${locked?`<button class="btn" disabled>🔒 ACAMPAMENTO NECESSÁRIO</button>`:revealed?`<button class="btn green" onclick="collectAreaMap('${key}')">EXPLORAR • 1 AÇÃO</button>`:`<button class="btn" disabled>🔒 REQUER BÚSSOLA</button>`}</div>`;
+  }).join("");
+  const special=!S.mapDiscovered?`<button class="btn gold" onclick="closeModal();openMapPurchase()">🗺️ PROCURAR MAPA DE OBJETIVOS</button>`:`<button class="btn" onclick="closeModal();useMapCard()">🗺️ CONSULTAR MAPA DA EXPEDIÇÃO</button>`;
+  const duel=S.duelUnlocked?`<button class="btn danger" onclick="closeModal();openDuelModal()">⚔️ DUELO</button>`:"";
+  showModal("🗺️ MAPAS DA EXPEDIÇÃO",`<p>Use a <b>Tab</b> para abrir esta tela. A Bússola equipada ou guardada na mochila revela os mapas de coleta. Após o Acampamento Completo, biomas reais mais exigentes ficam disponíveis.</p><div class="exploreMapGrid">${maps}</div>`,`<div class="modalActions">${special}${duel}<button class="btn" onclick="closeModal()">FECHAR</button></div>`);
+}
 function openMapPurchase(){
   if(discoveredSpecial("map")){log("🗺️ O Mapa já foi descoberto e não pode ser comprado novamente.");render();return;}
   if(S.stars<1){log("⭐ Você não possui estrelas para procurar um mapa.");return;}
@@ -2470,6 +2928,14 @@ function buyMap(cost){
 }
 
 function init(){
+  if(!S.areaMaps)S.areaMaps={forest:false,grove:false,cache:false};
+  if(!S.areaMapUses)S.areaMapUses={forest:0,grove:0,cache:0};
+  // Normalização: nunca permita coexistência de uma estrutura base e sua evolução.
+  const structureUpgradePriority={shelter:["tent"],waterSafe:["water"],kitchen:["fire"],camp:["tent","shelter","fire","water","waterSafe","kitchen"]};
+  for(const [advanced,bases] of Object.entries(structureUpgradePriority)){
+    const hasAdvanced=S.events.some(ev=>isStructureEvent(ev)&& (ev.structureId||ev.id)===advanced);
+    if(hasAdvanced){S.events=S.events.filter(ev=>!(isStructureEvent(ev)&&bases.includes(ev.structureId||ev.id)));}
+  }
   // Migração: construções antigas que ainda estiverem no campo passam para AMBIENTE / EVENTOS.
   if(Array.isArray(S.field)){const oldStructures=S.field.filter(x=>C[x?.id]?.struct);S.field=S.field.filter(x=>!C[x?.id]?.struct);oldStructures.forEach(x=>{const c=C[x.id];S.events.unshift({kind:"structure",id:"structure_"+x.id+"_migrated_"+Math.random().toString(36).slice(2),structureId:x.id,title:c.n,desc:c.d,icon:c.i,weather:"stable",round:S.round,value:x.value||c.cost||1,level:x.level||1,materials:x.materials||[x.id],max:x.max||c.baseRes||5,hp:x.hp??x.max??c.baseRes??5,protection:x.protection||""});});S.events=S.events.slice(0,5);}
 
@@ -2488,23 +2954,88 @@ $("buyCard").onclick=drawMain;$("mainDeck").onclick=drawMain;
 $("modButton").onclick=()=>{if(S.modHand)playModifier();else drawModifier()};
 $("modDeck").onclick=()=>{if(!S.modHand&&!S.mods.length)drawModifier();else log("⚡ O deck de modificadores está bloqueado pela regra de 1 modificador.")};
 $("endRound").onclick=endRound;
+$("autoButton").onclick=toggleAutoGame;
+$("duelButton").onclick=openDuelModal;
+$("resumeButton").onclick=()=>setPaused(false);
+$("pauseTutorialButton").onclick=()=>{setPaused(false);openTutorial()};
+$("pauseRulesButton").onclick=()=>{setPaused(false);$("rulesModal").classList.add("show");$("rulesModal").setAttribute("aria-hidden","false")};
 $("mpButton").onclick=startMP;
 $("craftButton").onclick=openCraftModal;
 $("inventoryButton").onclick=openInventoryModal;
-$("mapButton").onclick=openMapPurchase;
+$("mapButton").onclick=openMapScreen;
 $("rulesButton").onclick=()=>{$("rulesModal").classList.add("show");$("rulesModal").setAttribute("aria-hidden","false")};
 $("rulesClose").onclick=()=>{$("rulesModal").classList.remove("show");$("rulesModal").setAttribute("aria-hidden","true")};
 $("rulesModal").addEventListener("click",e=>{if(e.target.id==="rulesModal"){$("rulesModal").classList.remove("show");$("rulesModal").setAttribute("aria-hidden","true")}});
 function endRound(){if(MP.enabled)return mpEndTurn();return endRoundSingle();}
 
+/* V53: pausa, Autogame, progressão pós-acampamento e duelo */
+function setPaused(value){
+  S.paused=!!value;
+  const p=$("pauseOverlay");
+  if(p){p.classList.toggle("show",S.paused);p.setAttribute("aria-hidden",String(!S.paused));}
+  if(S.paused){S.autoGame=false;log("⏸️ Jogo pausado.","alert");}
+  render();
+}
+function togglePause(){if(!S||!S.round)return;if($("tutorialModal")?.classList.contains("show"))return;if($("overlay")?.classList.contains("show")&&!S.paused)return;setPaused(!S.paused);}
+function toggleAutoGame(){
+  if(S.paused){log("⏸️ Retome o jogo antes de ativar o Autogame.");return;}
+  S.autoGame=!S.autoGame;
+  log(S.autoGame?"🤖 Autogame ativado. A Unidade tomará decisões automaticamente.":"🤖 Autogame desativado.","action");
+  render();
+}
+function autoGameStep(){
+  if(!S.autoGame||S.paused||S.gameOver||MP.enabled)return;
+  try{
+    const ready=OBJECTIVES.find(o=>!S.completed.includes(o.id)&&isReady(o)&&hasMapAccess()&&canCompleteObjectives());
+    if(ready){closeModal();objectiveCreate(ready);return;}
+    const craftable=RECIPES.find(r=>C[r.id]&&!C[r.id].mod&&maxCraftQty(r)>0&&(!r.requiresFire||cookingFireAvailable()));
+    if(craftable){craftDirectAuto(craftable.id);return;}
+    const playable=S.hand.find(id=>C[id]&&!C[id].mod&&S.actions>0);
+    if(playable){playHand(playable);return;}
+    if(S.hand.length<Math.min(3,handCapacity())){if(drawMain())return;}
+    if(S.actions>0){endRoundSingle();return;}
+  }catch(err){console.warn("Autogame step skipped",err);if(S.actions>0)endRoundSingle();}
+}
+function craftDirectAuto(id){
+  const r=RECIPES.find(x=>x.id===id);if(!r)return false;
+  const max=maxCraftQty(r);if(max<1)return false;
+  const starCost=isNight()?2:1;
+  if(S.actions<=0||S.stars<starCost||S.hand.length>=handCapacity())return false;
+  const snapshot={resources:JSON.parse(JSON.stringify(S.resources)),hand:[...S.hand],inventory:[...S.inventory],backpack:[...S.backpackStorage],stars:S.stars,actions:S.actions,hunger:S.hunger,thirst:S.thirst,health:S.health};
+  try{
+    for(const [k,v] of Object.entries(r.req||{}))S.resources[k]-=v;
+    for(const [item,v] of Object.entries(r.items||{}))for(let n=0;n<v;n++)if(!removeOwned(item,1))throw new Error("componente");
+    if(r.requiresFire&&!cookingFireAvailable())throw new Error("fogueira");
+    S.stars-=starCost;S.actions--;
+    if(["trailMeal","cookedMeat","rehydration"].includes(id)){if(!canInventoryReceive(id))throw new Error("inventário");S.inventory.push(id);}else if(addToHandOrStorage(id)!=="hand")throw new Error("mão");
+    initFreshness(id);ensureItemDurability(id);consumeOnCreation("Autogame: "+r.n,0);log("🤖 Autogame fabricou "+r.n+".");render();return true;
+  }catch(e){Object.assign(S,{resources:snapshot.resources,hand:snapshot.hand,inventory:snapshot.inventory,backpackStorage:snapshot.backpack,stars:snapshot.stars,actions:snapshot.actions,hunger:snapshot.hunger,thirst:snapshot.thirst,health:snapshot.health});return false;}
+}
+function openDuelModal(){
+  if(!S.duelUnlocked){showModal("⚔️ DUELO BLOQUEADO","<p>Complete o <b>ACAMPAMENTO COMPLETO</b> para liberar o duelo.</p>",'<div class="modalActions"><button class="btn gold" onclick="closeModal()">ENTENDI</button></div>');return;}
+  const wins=S.duelStats?.wins||0,losses=S.duelStats?.losses||0;
+  showModal("⚔️ DUELO DE EXPEDIÇÃO",`<p>A Unidade está preparada para enfrentar um oponente em uma disputa de 3 rodadas.</p><p>Vitórias: <b>${wins}</b> • Derrotas: <b>${losses}</b></p><p>Seu poder é calculado a partir das estruturas e equipamentos disponíveis.</p>`,`<div class="modalActions"><button class="btn" onclick="closeModal()">CANCELAR</button><button class="btn danger" onclick="startDuel()">⚔️ INICIAR DUELO</button></div>`);
+}
+function startDuel(){
+  if(!S.duelUnlocked)return;
+  const playerPower=S.events.filter(isStructureEvent).reduce((a,e)=>a+(e.value||1),0)+equippedTotal()*2+S.stars;
+  const enemyPower=Math.max(4,Math.floor(7+S.difficulty*2+Math.random()*7));
+  let playerWins=0,enemyWins=0,round=0;
+  showModal("⚔️ DUELO EM ANDAMENTO",`<p id="duelStatus">Preparando o confronto...</p><div class="bar" style="margin-top:10px"><i id="duelProgress" style="width:0%"></i></div>`,`<div class="modalActions"><button class="btn" onclick="closeModal()">SAIR</button></div>`);
+  const timer=setInterval(()=>{if(S.paused)return;round++;const p=playerPower+Math.floor(Math.random()*5)-2,e=enemyPower+Math.floor(Math.random()*5)-2;if(p>=e)playerWins++;else enemyWins++;const st=$("duelStatus"),pr=$("duelProgress");if(st)st.innerHTML=`Rodada ${round}/3 • Unidade <b>${p}</b> × Oponente <b>${e}</b><br>Placar ${playerWins} × ${enemyWins}`;if(pr)pr.style.width=(round/3*100)+"%";if(round>=3){clearInterval(timer);const win=playerWins>=enemyWins;if(win){S.duelStats.wins++;S.stars=Math.min(8,S.stars+2);log("⚔️ Duelo vencido. +2⭐ de recompensa.","alert");}else{S.duelStats.losses++;S.health=Math.max(1,S.health-10);log("⚔️ Duelo perdido. A Unidade perdeu 10% de Vida.","alert");}setTimeout(()=>{closeModal();render();},650);}},800);
+}
+
 /* V25: login local, tutorial e geração do manual */
 const TUTORIAL_STEPS=[
- {t:'1. OBJETIVO',h:'Monte um acampamento completo',b:'Comece reunindo recursos. <strong>Barraca, Fogueira, Reserva de Água e demais estruturas</strong> podem liberar eventos e novas possibilidades. O objetivo final é concluir o <strong>ACAMPAMENTO COMPLETO</strong>.'},
+ {t:'1. OBJETIVO',h:'Monte o acampamento e continue',b:'Comece reunindo recursos. <strong>Barraca, Fogueira, Reserva de Água e demais estruturas</strong> liberam novas possibilidades. O <strong>ACAMPAMENTO COMPLETO</strong> não encerra a partida: ele libera novas regiões e o Duelo.'},
+ {t:'2. PAUSA E DIÁRIO',h:'Controle sua expedição',b:'Pressione <strong>ESC</strong> para pausar o jogo. O <strong>📜 DIÁRIO</strong> pode ficar visível, ser ocultado ou fixado como uma janela durante a partida. Use os controles do próprio Diário para escolher como acompanhar os acontecimentos.'},
  {t:'2. CARTAS',h:'Use suas ações com cuidado',b:'Você tem <strong>2 ações por rodada</strong>. Colocar uma carta no campo exige estrelas e ação. A primeira compra da rodada é gratuita. Compras adicionais custam <strong>⭐1 + 1 ação</strong>, até o limite de compras da rodada.'},
  {t:'3. COMBINAÇÕES',h:'Dois básicos criam um reforçado',b:'Itens reforçados <strong>não são comprados diretamente</strong>. Combine duas cartas básicas iguais no campo para criar sua versão reforçada. Ex.: <strong>2 Cordas → Corda Reforçada</strong>.'},
- {t:'4. MAPA E OBJETIVOS',h:'Descubra a expedição',b:'Sem <strong>Mapa</strong>, os objetivos permanecem ocultos. Quando um objetivo é descoberto, você recebe a notificação e pode visualizar os recursos necessários. Com o Mapa, o painel de objetivos é revelado. À noite, <strong>Mapa + Lanterna</strong> também permitem consultar os objetivos.'},
- {t:'5. CLIMA',h:'Sobreviva aos eventos',b:'Chuva, tempestade e sol intenso alteram o ambiente e podem afetar custos, resistência e necessidades. No multiplayer, o modificador ativo é direcionado ao <strong>jogador adversário</strong>.'},
- {t:'6. MODOS',h:'Aventura ou Sobrevivência',b:'Fome e sede caem principalmente durante esforço físico. Consumíveis recuperam necessidades. Estrelas têm um teto para evitar acúmulo exagerado. Reparar, trocar, vender e desmontar são ferramentas de recuperação.'}
+ {t:'4. MAPA E OBJETIVOS',h:'Descubra a expedição',b:'Os <strong>OBJETIVOS</strong> ficam em uma janela própria. O Mapa revela a expedição e, quando um objetivo estiver pronto, um <strong>pássaro</strong> avisa que ele pode ser finalizado. À noite, <strong>Mapa + Lanterna</strong> também permitem consultar os objetivos.'},
+ {t:'5. MODIFICADORES',h:'Revele o clima quando decidir',b:'O modificador comprado fica <strong>oculto na sua mão</strong>. Clique em <strong>ATIVAR</strong> para revelar e aplicar seu efeito. Você mantém apenas 1 modificador e pode trocar após 2 rodadas gratuitamente ou pagar o custo do novo modificador para trocar imediatamente.'},
+ {t:'6. MODOS',h:'Aventura ou Sobrevivência',b:'Fome e sede caem principalmente durante esforço físico. Consumíveis recuperam necessidades. Estrelas têm um teto para evitar acúmulo exagerado. Reparar, trocar, vender e desmontar são ferramentas de recuperação.'},
+ {t:'7. CONTROLES',h:'ESC pausa e Autogame observa',b:'<strong>ESC</strong> pausa a expedição. <strong>TAB</strong> abre os mapas. <strong>CAPS LOCK</strong> destaca o personagem. O botão <strong>🤖 AUTOGAME</strong> executa decisões automaticamente para você acompanhar a partida.'},
+ {t:'7. CONTROLES',h:'Atalhos rápidos da expedição',b:'Pressione <strong>TAB</strong> para abrir os mapas da expedição. Pressione <strong>CAPS LOCK</strong> para localizar e destacar a tela do personagem. A Bússola equipada ou guardada na mochila revela mapas de coleta; as ferramentas necessárias permitem explorar cada área.'}
 ];
 let tutorialIndex=0;
 function openTutorial(){tutorialIndex=0;renderTutorial();$('tutorialModal').classList.add('show')}
@@ -2518,7 +3049,8 @@ function startMode(mode){
   window._adventureTutorialOpen=false;
   tutorialIndex=0;
   $('modeModal').classList.remove('show');
-  $('gameApp').style.display='';const diff=mode==='survival'?Math.min(8,Number(localStorage.getItem('desbravadores_survival_runs')||0)):0;S={round:1,actions:2,stars:5,nextStars:5,roundStarBonus:0,drawsThisRound:0,paidDraws:0,mode,difficulty:diff,survivalRun:diff,resources:{wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0},resourceFocus:'wood',collectedThisRound:false,hunger:100,thirst:100,health:100,canteenWater:100,spoilage:{},freshness:{},itemDurability:{},runtimeLastTick:Date.now(),timeOfDay:"day",nextPhaseAt:0,phaseDuration:30000,deck:[],hand:[],field:[],grave:[],modDeck:[],modHand:null,mods:[],completed:[],selected:null,notified:new Set(),freeDraw:true,gameOver:false,weather:'stable',inventory:[],backpackStorage:[],equipment:{head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]},idleRounds:0,effortThisRound:false,events:[],activeEvent:null,victory:false,firstObjective:null,inventoryShuffleDone:false,paidDraws:0,mapDiscovered:false,bookDiscovered:false};if(mode==='survival'){const runs=diff+1;localStorage.setItem('desbravadores_survival_runs',String(runs));}init();log(mode==='survival'?'⛈️ Sobrevivência nível '+diff+' iniciada.':'🧭 Modo Aventura iniciado.');setTimeout(openAdventureTutorial,450)}
+  $('gameApp').style.display='';const diff=mode==='survival'?Math.min(8,Number(localStorage.getItem('desbravadores_survival_runs')||0)):0;S={round:1,actions:2,stars:5,nextStars:5,roundStarBonus:0,drawsThisRound:0,paidDraws:0,mode,difficulty:diff,survivalRun:diff,resources:{wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0,fruit:0,seeds:0,clay:0,bamboo:0},resourceFocus:'wood',collectedThisRound:false,hunger:100,thirst:100,health:100,canteenWater:100,spoilage:{},freshness:{},itemDurability:{},runtimeLastTick:Date.now(),timeOfDay:"day",nextPhaseAt:0,phaseDuration:30000,deck:[],hand:[],field:[],grave:[],modDeck:[],modHand:null,mods:[],completed:[],selected:null,notified:new Set(),readyObjectiveNotified:new Set(),freeDraw:true,gameOver:false,weather:'stable',inventory:[],backpackStorage:[],equipment:{head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]},idleRounds:0,effortThisRound:false,events:[],activeEvent:null,victory:false,firstObjective:null,inventoryShuffleDone:false,paidDraws:0,modLastChangeRound:0,modFreeChangeRound:0,mapDiscovered:false,bookDiscovered:false,areaMaps:{forest:false,grove:false,cache:false},areaMapUses:{forest:0,grove:0,cache:0},campCompleted:false,duelUnlocked:false,advancedMapsUnlocked:false,paused:false,autoGame:false,duelStats:{wins:0,losses:0}};if(mode==='survival'){const runs=diff+1;localStorage.setItem('desbravadores_survival_runs',String(runs));}initJournalControls();
+init();log(mode==='survival'?'⛈️ Sobrevivência nível '+diff+' iniciada.':'🧭 Modo Aventura iniciado.');setTimeout(openAdventureTutorial,450)}
 function initAuth(){
   const login=$('loginScreen');
   if(login) login.classList.add('hidden');
@@ -2538,8 +3070,8 @@ function generateManualPDF(){
    ['8. CLIMA','Chuva, Tempestade e Sol Intenso são modificadores. Eles podem alterar custos, resistência e necessidades. No MP local, o modificador de um jogador afeta o adversário.'],
    ['9. SOBREVIVÊNCIA','Fome e sede são recursos de sobrevivência. Esforço físico reduz necessidades. Alimentos e água podem recuperar o jogador. Se as necessidades chegarem a zero, use os recursos de emergência para se recuperar.'],
    ['10. MULTIPLAYER LOCAL','Ative MP LOCAL para dividir a tela em dois jogadores. Cada jogador mantém seu próprio campo, mão, estrelas, necessidades e objetivos. O turno passa para o adversário ao encerrar a vez.'],
-   ['11. VITÓRIA','A partida termina quando o jogador conclui a sequência necessária para montar o Acampamento Completo.'],
-   ['CONTROLES RÁPIDOS','COMPRAR CARTA: primeira compra grátis; segunda compra custa ⭐1 + 1 ação. | TUTORIAL: abre este guia resumido. | MANUAL PDF: gera este manual. | MP LOCAL: inicia uma partida para dois jogadores no mesmo dispositivo.']
+   ['11. PROGRESSÃO','O Acampamento Completo não encerra a partida. Ele libera o Duelo e novos biomas reais brasileiros, como Mata Atlântica, Cerrado, Caatinga, Amazônia e Pantanal.'],
+   ['12. CONTROLES E EXPLORAÇÃO','TAB abre os mapas da expedição. CAPS LOCK destaca a tela do personagem. Bússola equipada ou guardada na mochila revela mapas de coleta. Cada mapa exige ferramentas adequadas. O Cantil equipado consome água automaticamente conforme a sede diminui. Refeições preparadas vão automaticamente para o inventário.']
   ];
   const make=window.jspdf&&window.jspdf.jsPDF;
   if(!make){const w=window.open('','_blank');w.document.write('<pre style="white-space:pre-wrap;font:16px Arial;padding:30px">'+data.map(x=>x[0]+'\n'+x[1]).join('\n\n')+'</pre>');w.document.close();w.print();return;}
@@ -2551,10 +3083,12 @@ function generateManualPDF(){
 const ADVENTURE_STEPS=[
  {t:'1. COLETA',h:'Escolha um recurso para a rodada',b:'No painel <strong>RECURSOS COLETADOS</strong>, escolha Madeira, Fibras, Tecido, Metal, Água, Alimento, Combustível ou Medicinais. No fim de cada rodada, o foco recebe recursos.'},
  {t:'2. MONTAGEM',h:'Atinja a quantidade e fabrique',b:'Quando os recursos atingirem a receita, clique em <strong>MONTAR</strong>. A montagem usa 1 ação e coloca o item na mão ou na Mochila.'},
- {t:'3. CONSTRUÇÃO',h:'Leve os itens ao acampamento',b:'Jogue cartas no campo para criar sua base. Barraca protege, Fogueira permite cozinhar, Reserva de Água mantém a equipe abastecida.'},
+ {t:'3. CONSTRUÇÃO',h:'Leve os itens ao acampamento',b:'Jogue cartas no campo para criar sua base. Barraca protege, Fogueira permite cozinhar, Reserva de Água mantém a Unidade abastecida.'},
  {t:'4. DESMONTE',h:'Recupere parte dos materiais',b:'Construções podem ser desmontadas. Você paga a ação e recupera materiais parcialmente, criando uma decisão entre manter a estrutura ou reaproveitar recursos.'},
  {t:'5. SOBREVIVA',h:'O clima não espera',b:'Chuva, tempestade, fome, sede, noite e desgaste pressionam a expedição. Proteja as estruturas, cozinhe, beba e mantenha o acampamento funcional.'},
- {t:'6. OBJETIVOS',h:'Descubra o que fazer',b:'O Mapa revela os objetivos. Sem Mapa, você recebe pistas e vê os recursos necessários. À noite, Mapa + Lanterna também permitem consultar o painel.'}
+ {t:'6. OBJETIVOS',h:'Descubra o que fazer',b:'O Mapa revela os objetivos. Sem Mapa, você recebe pistas e vê os recursos necessários. À noite, Mapa + Lanterna também permitem consultar o painel.'},
+ {t:'7. MAPAS E CONTROLES',h:'Explore novas áreas',b:'A <strong>Bússola</strong>, equipada ou guardada na mochila, revela mapas de coleta. Cada área exige ferramentas adequadas. Use <strong>TAB</strong> para abrir os mapas e <strong>CAPS LOCK</strong> para acessar a tela do personagem.'},
+ {t:'8. PAUSA E PROGRESSÃO',h:'ESC pausa, Autogame observa',b:'Pressione <strong>ESC</strong> para pausar. Use <strong>🤖 AUTOGAME</strong> para assistir a Unidade jogar sozinha. Ao completar o <strong>ACAMPAMENTO COMPLETO</strong>, a partida continua, o <strong>DUELO</strong> é liberado e biomas reais brasileiros ficam disponíveis.'}
 ];
 function openAdventureTutorial(){window._adventureTutorialOpen=true;tutorialIndex=0;renderAdventureTutorial();$('tutorialModal').classList.add('show')}
 function renderAdventureTutorial(){const x=ADVENTURE_STEPS[tutorialIndex];$('tutorialTitle').textContent=x.h;$('tutorialStep').innerHTML=`<b style="color:#7fd4e1">${x.t}</b><p>${x.b}</p>`;$('tutorialDots').innerHTML=ADVENTURE_STEPS.map((_,i)=>`<i class="${i===tutorialIndex?'active':''}"></i>`).join('');$('tutorialPrev').disabled=tutorialIndex===0;$('tutorialNext').textContent=tutorialIndex===ADVENTURE_STEPS.length-1?'COMEÇAR':'PRÓXIMO'}
@@ -2565,8 +3099,16 @@ document.addEventListener("mousemove",e=>{const target=e.target.closest("[data-t
 document.addEventListener("mouseleave",()=>hideGameTooltip(),true);
 setInterval(()=>{try{tickRealtimeSystems();const tip=$("gameTooltip");if(tip&&tip.classList.contains("show")){const hovered=document.querySelector(":hover[data-tooltip]");if(hovered)tip.innerHTML=hovered.getAttribute("data-tooltip");}}catch(err){console.warn("Realtime update skipped",err)}},500);
 setInterval(()=>{tickDayNight()},1000);
+setInterval(()=>{try{autoGameStep()}catch(err){console.warn("Autogame timer skipped",err)}},1600);
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){e.preventDefault();if(S?.round)togglePause();return;}
+  if(e.key==="Tab"){e.preventDefault();if(!S?.paused)openMapScreen();return;}
+  if(e.key==="CapsLock"){e.preventDefault();const panel=$("characterPanel");if(panel){panel.scrollIntoView({behavior:"smooth",block:"center"});panel.classList.remove("keyFocus");void panel.offsetWidth;panel.classList.add("keyFocus");setTimeout(()=>panel.classList.remove("keyFocus"),2300);}return;}
+});
+const devNotice=$("devNotice"),devNoticeContinue=$("devNoticeContinue");
+if(devNoticeContinue)devNoticeContinue.onclick=()=>{devNotice.classList.add("hidden");setTimeout(()=>showModeSelect(),120);};
 initAuth();
 </script>
-<div id="gameTooltip" role="tooltip"></div>
+<div id="dustFX" aria-hidden="true">🌫️💨</div><div id="gameTooltip" role="tooltip"></div>
 </body>
 </html>

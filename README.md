@@ -1806,3 +1806,220 @@ O jogador deve conseguir olhar para um equipamento ou construção e entender im
 - Fogueira continua usando combustível e sofrendo influência do clima.
 - Cantil continua mostrando sua reserva de água.
 - O README completo deve acompanhar todas as versões futuras.
+
+# 63. V52 Beta • hidratação, exploração, upgrades e atalhos
+
+A V52 consolida novas regras de sobrevivência e exploração:
+
+- O Cantil equipado possui barra em tempo real no painel do personagem. A barra acompanha o percentual de água consumido automaticamente pela sede.
+- Refeições preparadas na Oficina são enviadas automaticamente para o Inventário, desde que haja espaço e peso disponíveis.
+- Toda nova construção inicia com 100% de durabilidade. Upgrades também reiniciam a estrutura para 100%.
+- Reparos recuperam 20% da durabilidade máxima por ação, limitado a 100%.
+- Upgrades de estruturas incluem Barraca → Abrigo Reforçado, Reserva de Água → Reserva Purificada e Fogueira → Área de Cozinha, com requisitos específicos.
+- A evolução de uma estrutura substitui a carta anterior e apresenta uma animação de poeira no local da construção.
+- Foram adicionados mapas de exploração: Mata de Coleta, Pomar Silvestre e Depósito de Apoio.
+- A Bússola equipada ou guardada na mochila revela os mapas de exploração. Cada área exige ferramentas adequadas para coleta.
+- Mapa e Livro de Objetivos são priorizados no sorteio inicial e permanecem garantidos até a 5ª rodada enquanto ainda não tiverem sido descobertos/consumidos.
+- TAB abre a tela de mapas da expedição.
+- CAPS LOCK localiza e destaca a tela do personagem.
+- O tutorial foi atualizado com os novos atalhos, mapas e requisitos de exploração.
+- O termo de interface **Equipe** foi padronizado para **Unidade**.
+
+## Novos mapas
+
+| Mapa | Coleta | Requisitos |
+|---|---|---|
+| Mata de Coleta | Lenha, fibras e frutas | Machadinha ou Facão |
+| Pomar Silvestre | Frutas e fibras | Facão ou Lança |
+| Depósito de Apoio | Metal, pregos, parafusos, arame e papel | Martelo ou Kit de Construção |
+
+As explorações consomem 1 ação e registram quantas vezes cada mapa foi explorado.
+
+
+# V53 Beta • Correção de evolução de estruturas e acesso aos objetivos
+
+## Correções
+- Barraca não permanece junto do Abrigo Reforçado após a evolução.
+- Uma estrutura base é removida quando sua evolução é criada.
+- Reserva de Água é substituída por Reserva Purificada quando aplicável.
+- Fogueira é substituída por Área de Cozinha quando a evolução é concluída.
+- Acampamento Completo remove as estruturas-base que compõem o objetivo final.
+- O sistema também normaliza estados antigos que contenham simultaneamente uma estrutura base e sua evolução.
+
+## Mapa e Livro de Objetivos
+- Ter o Mapa na mão, inventário ou armazenamento já concede acesso aos objetivos durante o dia.
+- Ter o Livro de Objetivos na mão, inventário ou armazenamento já habilita a conclusão.
+- As flags `mapDiscovered` e `bookDiscovered` continuam registrando o uso/descoberta permanente.
+- À noite, a Lanterna continua necessária para consultar os objetivos.
+
+## Correção de receitas/objetivos
+- O objetivo `MONTAR ÁREA DE COZINHA` agora gera a estrutura `ÁREA DE COZINHA`, em vez de gerar uma Refeição.
+- As substituições de estruturas são feitas antes da nova estrutura entrar em `AMBIENTE / EVENTOS`.
+
+## Regra arquitetural reforçada
+Uma evolução de estrutura ocupa o lugar lógico da estrutura anterior. O jogo não deve apresentar simultaneamente uma versão básica e sua evolução.
+
+
+## Aparência 16-bit consolidada (sem alteração de versão)
+
+A V53 recebeu uma reformulação visual completa para uma estética 16-bit/pixel art, **sem alteração do número da versão**. A mudança é exclusivamente uma evolução de apresentação e UX visual da mesma release.
+
+A reformulação abrange: cabeçalho, HUD, botões, painéis, mesa, zonas, cartas, deck, modais, tooltips, personagem, equipamentos, barras de status, inventário, oficina, mapas, eventos, multiplayer, clima e animações. Foram adotadas bordas em degraus, sombras duras, tipografia pixel, transições em passos e padrões de fundo pixelados.
+
+# V53 Beta • Progressão pós-acampamento, pausa, Autogame e biomas reais
+
+> **A versão permanece V53.** Estas mudanças foram incorporadas à mesma release, conforme decisão do projeto de não alterar o número da versão nesta etapa.
+
+## Pausa
+- `ESC` pausa a partida.
+- Dia/noite, degradação de estruturas, deterioração de perecíveis e Autogame são congelados durante a pausa.
+- O menu de pausa oferece continuar, tutorial e regras rápidas.
+
+## Autogame
+- O botão `🤖` ativa/desativa o Autogame.
+- Quando ativo, o jogo toma decisões automaticamente em pequenos intervalos para que o jogador possa apenas observar a expedição.
+- A lógica prioriza objetivos disponíveis, crafting possível, cartas jogáveis, compra de cartas e encerramento da rodada.
+- O Autogame pode ser interrompido pelo mesmo botão.
+
+## Acampamento Completo não encerra a partida
+- Concluir o Acampamento Completo agora é um marco de progressão, não uma condição de Game Over.
+- O jogador continua na mesma expedição.
+- O evento libera o sistema de Duelo.
+- O evento libera novos mapas de biomas reais brasileiros.
+
+## Duelo
+- O botão `⚔️` permanece oculto até o Acampamento Completo.
+- O Duelo é uma disputa opcional em 3 rodadas contra um oponente simulado.
+- O poder do jogador considera estruturas, equipamentos e estrelas.
+- Vitória concede uma pequena recompensa de estrelas.
+- Derrota reduz Vida, sem encerrar a expedição.
+
+## Biomas reais
+Após o Acampamento Completo, com Bússola equipada ou guardada na mochila, ficam disponíveis:
+- Mata Atlântica
+- Cerrado
+- Caatinga
+- Amazônia
+- Pantanal
+
+Cada bioma exige ferramentas adequadas e possui uma tabela de recursos própria.
+
+## Novos recursos
+Foram adicionados recursos coletáveis para ampliar a exploração:
+- Frutas Silvestres
+- Sementes
+- Argila
+- Bambu
+
+Eles passam a fazer parte do estado de recursos da partida e podem ser expandidos em receitas futuras.
+
+## Controles atualizados
+- `ESC` = Pausar/retomar
+- `TAB` = Abrir mapas da expedição
+- `CAPS LOCK` = Destacar/ir para o painel do personagem
+- `🤖` = Ativar/desativar Autogame
+- `⚔️` = Abrir Duelo, quando desbloqueado
+- `➡️` = Avançar para a próxima rodada
+
+## Princípio de progressão
+A sequência principal passa a ser:
+
+```text
+RECURSOS
+  ↓
+CRAFT
+  ↓
+ESTRUTURAS
+  ↓
+ACAMPAMENTO COMPLETO
+  ↓
+NOVOS BIOMAS
+  ↓
+EXPLORAÇÃO AVANÇADA
+  ↓
+DUELOS E NOVOS DESAFIOS
+```
+
+O Acampamento Completo é, portanto, a preparação para a segunda camada da expedição, e não o encerramento da partida.
+
+## Ajuste visual de tipografia - V53
+
+A interface continua integralmente com identidade visual 16-bit, porém a tipografia pixelada foi removida dos textos corridos e controles por prejudicar a leitura.
+
+A nova hierarquia tipográfica usa:
+- **Rajdhani** para títulos, HUD, botões, nomes de cartas e elementos de destaque;
+- **Inter** para descrições, textos corridos, tooltips, regras e informações detalhadas.
+
+O objetivo é manter a aparência de RPG/card game com estética retrô, sem sacrificar legibilidade em desktop, tablet, celular ou zoom do navegador.
+
+**Importante:** essa alteração é exclusivamente visual e **não altera o número da versão**. O projeto continua em **V53 Beta**.
+
+
+## V53 Beta • Tipografia, rodapé, layout e embaralhamento
+
+Esta atualização mantém a versão **V53 Beta** e aplica apenas refinamentos de apresentação e UX:
+
+- toda a interface usa a mesma família tipográfica da caixa **COMPRAR CARTA**, baseada em Rajdhani;
+- rodapé padronizado como `DESBRAVADORES: RPG CARD GAME • PRE-ALPHA • BUILD 0.53 • DESENVOLVIDO POR KNOXZINHO`, com o crédito em itálico;
+- revisão responsiva para reduzir sobreposição, corte e desalinhamento em desktop, tablet, celular e zoom;
+- animação de embaralhamento refinada e reduzida para aproximadamente 3 segundos;
+- arte do verso fornecida para as cartas/deck também é usada como textura sutil no fundo das cartas frontais;
+- a versão permanece **V53**, sem criação de V55.
+
+## V53 Beta • Fluxo do sorteio inicial
+
+A etapa de sorteio inicial foi refinada sem alteração do número da versão.
+
+Antes do embaralhamento, a janela apresenta somente as informações da missão e a instrução para iniciar o sorteio:
+- `MISSÃO DEFINIDA: [Nome da missão]`;
+- `O sorteio inicial acontece quando você clicar em EMBARALHAR`;
+- botão `🔀 EMBARALHAR`.
+
+As cartas exibidas nessa etapa permanecem estáticas. A animação de embaralhamento somente é ativada depois que o jogador clica em **EMBARALHAR**.
+
+Durante a animação, a mensagem apresentada é:
+> `Prepando a Deck para sua aventura`
+
+A animação continua com duração aproximada de 3 segundos. Ao término, as cartas iniciais são distribuídas para a mão.
+
+**Importante:** esta alteração mantém o projeto em **V53 Beta**.
+
+
+## Atualização V53 · UX da expedição
+
+Esta atualização mantém deliberadamente a identificação **V53 Beta / Build 0.53** e acrescenta os seguintes refinamentos de experiência:
+
+- A seleção da primeira missão apresenta **MISSÃO DEFINIDA: [nome]** antes do sorteio.
+- O sorteio inicial só começa após o clique em **EMBARALHAR**.
+- A animação inicial dura **3 segundos**, usa deslocamento em uma única direção e exibe a mensagem **Preparando as cartas para sua aventura** com barra percentual de progresso.
+- Toda a interface utiliza **Rajdhani** como família tipográfica principal, mantendo a leitura mais limpa dentro da estética 16-bit.
+- O **📜 DIÁRIO** pode ser ocultado ou fixado como uma janela durante a partida.
+- O tutorial inicial explica ESC para pausa e o controle de visibilidade/fixação do Diário.
+- **COMPRAR CARTA** e **DECK DE MODIFICADORES** foram compactados para ocupar a mesma linha quando houver largura suficiente.
+- Objetivos que já possuem todos os requisitos passam a gerar uma notificação visual com um **pássaro voando**, informando qual objetivo está pronto para ser cumprido.
+- O layout recebeu ajustes responsivos para reduzir cortes e sobreposições.
+
+### Regra de versionamento
+
+As alterações acima são parte da **V53**. O projeto não avança o número da versão para estes refinamentos visuais e de UX.
+
+
+## Atualização V55 · Modificadores ocultos, objetivos em popup e embaralhamento corrigido
+
+- Build atual: **0.54**.
+- Modificadores agora entram diretamente em uma mão exclusiva de 1 carta e não ocupam os 5 espaços da mão principal.
+- O conteúdo do modificador permanece oculto enquanto estiver na mão. O jogador usa **ATIVAR** para revelar e aplicar o efeito.
+- **MUDAR MODIFICADOR** permite trocar a carta. A troca é gratuita após 2 rodadas; antes disso, é possível trocar imediatamente pagando o custo do novo modificador, se houver estrelas suficientes.
+- O painel lateral não exibe mais nome, descrição ou arte detalhada do modificador que está oculto.
+- **OBJETIVOS** saíram da lista fixa do painel lateral e passam a ser exibidos em uma janela popup por meio de **ABRIR OBJETIVOS**.
+- Quando um objetivo fica pronto para conclusão, a notificação visual do pássaro é disparada uma vez por objetivo enquanto ele permanecer pendente.
+- A animação do embaralhamento inicial foi corrigida: a animação é desativada no estado de espera e só recebe `animation` quando a sequência de 3 segundos começa.
+- O fluxo inicial continua: aviso de desenvolvimento → seleção de modo → tutorial → escolha de objetivo → tela estática de embaralhamento → clique em **EMBARALHAR** → animação → mão inicial.
+- Arte de verso das cartas mantida em `assets/card-back.png`.
+
+
+## Atualização V55 · Interface responsiva
+- Barra superior reduzida aos ícones de Inventário, Mapa e Craft e ao indicador PLANEJAMENTO • DIA/NOITE.
+- Título do deck de modificadores simplificado para MODIFICADORES.
+- Diário com botão OCULTAR/MOSTRAR funcional, incluindo restauração do estado salvo.
+- Objetivos apresentados em popup responsivo, com grade adaptativa e rolagem interna.
