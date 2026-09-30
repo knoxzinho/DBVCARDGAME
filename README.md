@@ -2074,3 +2074,26 @@ A animação de embaralhamento inicial foi retirada da dependência de CSS e pas
 - Cartas mantêm proporção quadrada e a arte completa do verso, sem corte.
 - Conteúdo excedente usa rolagem interna, sem ultrapassar a caixa do deck.
 - Build atualizada para 0.61.
+
+
+## Atualização V62 · Proporção fixa da mão
+
+A área de mão passou a manter sempre a mesma largura relativa de cada carta usada no layout de cinco cartas. Com 1, 2, 3, 4 ou 5 cartas, as cartas não se expandem para preencher o espaço disponível.
+
+
+## Atualização V63 · Rotação, contas, progresso e custos de cartas
+
+- A rotação vertical das cartas no inspetor foi acelerada para uma animação de 2 segundos com maior número de voltas, sem revelar a frente.
+- O tutorial recebeu novas etapas explicando o custo individual das cartas, a inspeção/embaralhamento dos decks e o sistema de sessão e progresso por usuário.
+- Foi adicionada uma tela de conta local com criação de usuário e autenticação por senha armazenada como hash SHA-256 no navegador.
+- Cada usuário possui uma chave de save própria e uma sessão local independente.
+- O progresso da expedição é salvo automaticamente a cada 2 segundos e também antes de fechar a página.
+- Uma expedição salva pode ser retomada sem reiniciar a mão, o deck, os modificadores, a rodada ou os recursos.
+- Foi adicionada a opção de sair da conta pelo menu de pausa.
+- O sistema de custos das cartas foi reforçado: cartas jogáveis exigem o número de estrelas definido em `C[id].cost`, e o custo é retirado do total ao jogar a carta.
+- Equipamentos, Mapa e Livro também passam a descontar o custo de estrelas ao serem jogados/consultados.
+- Exemplo: CORDA custa ⭐2; o jogador precisa possuir pelo menos 2 estrelas e, ao jogar a carta, perde 2 estrelas e 1 movimento.
+- A construção de estruturas continua utilizando seu custo próprio e mantendo a validação de estrelas e movimentos.
+- Build atualizada para 0.63.
+
+> Observação: o sistema de contas desta versão é local, adequado ao protótipo. Ele não substitui autenticação de servidor para um produto publicado em produção.

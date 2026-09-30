@@ -314,6 +314,8 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 .handTools{bottom:28px;gap:3px}.miniBtn{font-size:5.5px;padding:2px 4px}
 .boardCard{border-radius:5px}.boardCard .bArt{height:36%;font-size:32px}.boardCard .bName{font-size:9px}.boardCard .bDesc{font-size:6.5px}.boardCard .materials{font-size:6px}.boardActions,.boardBottomActions{gap:2px}.boardActions .btn,.boardBottomActions .btn{font-size:5.5px!important;padding:3px 1px!important}
 .modeModal{position:fixed;inset:0;z-index:11000;display:none;place-items:center;background:#02070bdc;padding:18px}.modeModal.show{display:grid}.modePanel{width:min(820px,95vw);background:#0b151b;border:1px solid #9c7b3b;border-radius:12px;padding:24px;box-shadow:0 25px 90px #000}.modePanel h2{font:800 28px Rajdhani;margin:0;color:#f3c754;text-align:center}.modePanel>p{text-align:center;color:#a8b7bf;font-size:10px;margin:7px auto 18px;max-width:600px}.modeGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.modeChoice{border:1px solid #355061;background:#101c24;border-radius:9px;padding:18px;text-align:left;cursor:pointer;transition:.16s}.modeChoice:hover{transform:translateY(-3px);border-color:#d5b353;box-shadow:0 12px 35px #0007}.modeChoice h3{border:0;margin:0 0 7px;padding:0;font-size:19px}.modeChoice p{font-size:9px;line-height:1.55;color:#a9bac3}.modeChoice .modeIcon{font-size:38px;float:right}.modeChoice.survival{border-color:#6c4145}.modeBadge{font-size:7px;color:#89cfe0;letter-spacing:1px;font-weight:800}.modeTag{font-size:7px;color:#f1cd69;margin-top:10px}
+.loginAccountScreen{position:fixed;inset:0;z-index:11500;display:none;place-items:center;background:#02070bdd;padding:18px}.loginAccountScreen.show{display:grid}.loginAccountPanel{width:min(440px,94vw);padding:28px;background:#0b151b;border:1px solid #b28a3d;border-radius:12px;box-shadow:0 25px 90px #000;text-align:center}.loginAccountPanel h2{margin:7px 0 8px;color:#f3c754;font:800 28px Rajdhani}.loginAccountPanel p{color:#a9b8c0;font-size:10px;line-height:1.5;margin:0 0 16px}.loginAccountForm{display:grid;gap:10px;text-align:left}.loginAccountForm label{font-size:9px;color:#d5e0e5;font-weight:700}.loginAccountForm input{width:100%;box-sizing:border-box;margin-top:4px;padding:11px;background:#081017;border:1px solid #334b58;border-radius:7px;color:#fff}.loginAccountForm input:focus{border-color:#5bcfe3;outline:none;box-shadow:0 0 0 2px #5bcfe322}.loginAccountActions{display:flex;gap:8px;margin-top:4px}.loginAccountActions .btn{flex:1}.loginAccountStatus{min-height:18px;margin-top:10px;color:#f3c754;font-size:9px}.loginAccountHint{margin-top:12px!important;color:#6f818b!important;font-size:8px!important}.continueExpedition{margin:0 auto 14px;padding:10px 12px;background:#0b171e;border:1px solid #3d5967;border-radius:8px;text-align:left;display:none}.continueExpedition.show{display:block}.continueExpedition b{color:#f3c754}.continueExpedition small{display:block;color:#91a5af;margin-top:3px}.logoutMini{margin-top:10px;width:100%}
+
 .resourcePanel{background:#0a1118;border:1px solid #394f61;border-radius:5px;padding:9px;margin-top:9px}.resourceTitle{font:800 17px Rajdhani;color:#e4c564;letter-spacing:1px}.resourceHint{font-size:7px;color:#8fa3b0;line-height:1.4;margin:3px 0 7px}.resourceGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.resPick{border:1px solid #304653;background:#111c24;color:#cbd7dc;border-radius:3px;padding:5px 2px;font-size:6.5px;cursor:pointer}.resPick.active{border-color:#e5c45c;color:#f6d46d;background:#252014}.resPick b{display:block;font-size:8px}.recipeList{display:grid;gap:4px;margin-top:7px}.recipe{display:grid;grid-template-columns:1fr auto;gap:5px;align-items:center;background:#0e1921;border:1px solid #273d4b;border-radius:4px;padding:5px}.recipe b{font-size:7px;color:#d7c17e}.recipe small{display:block;font-size:6px;color:#899ca7;margin-top:2px}.recipe button{font-size:6px!important;padding:4px 6px!important}.resourceCount{display:flex;justify-content:space-between;font-size:7px;color:#aab9c0;margin-top:5px}.modeStatus{margin-top:5px;font-size:7px;color:#86cfe0}
 @media(max-width:1100px){.hand{grid-template-columns:repeat(5,minmax(0,1fr));}.card{min-height:205px}.modeGrid{grid-template-columns:1fr}}
 @media(max-width:760px){.hand{grid-template-columns:repeat(2,minmax(0,1fr));}.card{min-height:200px}.resourceGrid{grid-template-columns:repeat(2,1fr)}}
@@ -501,7 +503,7 @@ html,body,button,input,select,textarea{font-family:Inter,'Segoe UI',Arial,sans-s
 .deckInspectCard.idleSpin .deckInspectInner{animation:deckIdleSpin 2s linear 1;transform-origin:center center}
 .deckInspectCard.idleSpin .deckInspectFront{visibility:hidden!important}
 .deckInspectCard.idleSpin .deckInspectBack{backface-visibility:visible!important}
-@keyframes deckIdleSpin{0%{transform:rotateY(0deg)}100%{transform:rotateY(1440deg)}}
+@keyframes deckIdleSpin{0%{transform:rotateY(0deg)}100%{transform:rotateY(2880deg)}}
 .deckInspectFace{position:absolute;inset:0;backface-visibility:hidden;border:2px solid #c9a94f;border-radius:6px;overflow:hidden;box-shadow:4px 5px #000a;background:#111922}
 .deckInspectBack{background:url("assets/card-back.png") center/100% 100% no-repeat}
 .deckInspectFront{transform:rotateY(180deg);display:flex;flex-direction:column;background:#101923}
@@ -916,8 +918,30 @@ body{font-weight:500;letter-spacing:.15px}
   position:relative!important;
 }
 .hand .card:not(.disabledCard){opacity:1!important;}
+
+/* V62: largura fixa da carta na mão, independente da quantidade de cartas */
+.hand{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:8px!important;
+  align-items:stretch!important;
+  justify-content:stretch!important;
+  overflow:visible!important;
+}
+.hand .card{
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:760px){
+  .hand{
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    gap:7px!important;
+  }
+}
 </style>
-<meta name="build" content="0.61">
+<meta name="build" content="0.63">
 </head>
 
 <body>
@@ -933,11 +957,29 @@ body{font-weight:500;letter-spacing:.15px}
   </div>
 </div>
 
+<div id="loginAccountScreen" class="loginAccountScreen" aria-hidden="true">
+  <div class="loginAccountPanel">
+    <div class="loginKicker">SESSÃO DA EXPEDIÇÃO</div>
+    <div class="loginLogo">🧭</div>
+    <h2>ENTRAR NA EXPEDIÇÃO</h2>
+    <p>Crie sua conta local ou entre em uma conta existente. Cada usuário mantém uma sessão e um progresso separado neste navegador.</p>
+    <div id="continueExpedition" class="continueExpedition"><b>EXPEDIÇÃO SALVA</b><small id="continueExpeditionText"></small><button class="btn gold logoutMini" onclick="resumeSavedGame()">▶ CONTINUAR EXPEDIÇÃO</button></div>
+    <form id="loginAccountForm" class="loginAccountForm">
+      <label>USUÁRIO<input id="loginAccountUser" autocomplete="username" maxlength="24" required></label>
+      <label>SENHA<input id="loginAccountPass" type="password" autocomplete="current-password" minlength="4" required></label>
+      <div class="loginAccountActions"><button class="btn gold" type="submit">ENTRAR / CRIAR</button></div>
+    </form>
+    <div id="loginAccountStatus" class="loginAccountStatus"></div>
+    <p class="loginAccountHint">Protótipo local: as contas e os saves ficam no armazenamento deste navegador. Não use uma senha real de outros serviços.</p>
+  </div>
+</div>
+
 <div id="modeModal" class="modeModal">
   <div class="modePanel">
     <div class="modeBadge" style="text-align:center">MODO DE JOGO</div>
     <h2>Escolha o modo de jogo</h2>
     <p>Na Aventura você aprende jogando. No Sobrevivência, cada nova partida registra sua experiência e aumenta gradualmente a pressão da expedição.</p>
+    <div id="modeContinueBox" class="continueExpedition" style="margin-bottom:14px"><b>EXPEDIÇÃO SALVA</b><small id="modeContinueText"></small><button class="btn gold logoutMini" onclick="resumeSavedGame();$('modeModal').classList.remove('show')">▶ CONTINUAR</button></div>
     <div class="modeGrid">
       <button class="modeChoice" onclick="startMode('adventure')"><span class="modeIcon">🧭</span><h3>AVENTURA</h3><p>Tutorial guiado, clima controlado e dificuldade fixa. Ideal para aprender coleta, construção, objetivos, abrigo, cozinha, desmontagem e sobrevivência.</p><div class="modeTag">APRENDER • EXPLORAR • CONSTRUIR</div></button>
       <button class="modeChoice survival" onclick="startMode('survival')"><span class="modeIcon">⛈️</span><h3>SOBREVIVÊNCIA</h3><p>A dificuldade escala conforme suas partidas. Eventos duram mais, o clima castiga mais, necessidades caem mais rápido e a coleta fica mais arriscada.</p><div class="modeTag" id="survivalProgress">NÍVEL DE EXPERIÊNCIA: 0</div></button>
@@ -1180,7 +1222,7 @@ body{font-weight:500;letter-spacing:.15px}
     <div class="pauseActions">
       <button class="btn gold" id="resumeButton">▶ CONTINUAR</button>
       <button class="btn" id="pauseTutorialButton">📖 TUTORIAL</button>
-      <button class="btn" id="pauseRulesButton">📌 REGRAS</button>
+      <button class="btn" id="pauseRulesButton">📌 REGRAS</button><button class="btn danger" onclick="logoutUser()">⎋ SAIR DA CONTA</button>
     </div>
   </div>
 </div>
@@ -1204,7 +1246,7 @@ body{font-weight:500;letter-spacing:.15px}
     <div class="rulesBody">
       • Campo: 5 cartas.<br>
       • Inventário: 5 espaços + upgrades. Peso inicial: 10.<br>
-      • 2 ações por rodada.<br>
+      • 2 movimentos por rodada.<br>• Cada carta possui um custo próprio em ⭐ estrelas; jogar a carta retira esse custo do total disponível.<br>
       • A primeira compra da rodada é gratuita; a segunda custa ⭐1 + 1 ação.<br>
       • Durante o dia, fabricar custa menos. Durante a noite, fabricar custa mais.<br>
       • Dois itens básicos iguais podem criar um item reforçado.<br>
@@ -1221,7 +1263,7 @@ body{font-weight:500;letter-spacing:.15px}
 
 <div id="mpScreen" class="mpScreen"></div>
 
-<footer class="gameFooter"><span>DESBRAVADORES: RPG CARD GAME</span><span>•</span><span>PRE-ALPHA</span><span>•</span><span>BUILD 0.61</span><span>•</span><em>DESENVOLVIDO POR KNOXZINHO</em></footer>
+<footer class="gameFooter"><span>DESBRAVADORES: RPG CARD GAME</span><span>•</span><span>PRE-ALPHA</span><span>•</span><span>BUILD 0.63</span><span>•</span><em>DESENVOLVIDO POR KNOXZINHO</em></footer>
 <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
 <div class="toast" id="toast"><div class="toastIcon">!</div><div><b id="toastTitle"></b><span id="toastText"></span></div><button class="btn gold" id="toastBtn">VER</button></div>
 <div class="objectiveBird" id="objectiveBird" aria-live="polite"><span class="birdSprite">🐦</span><div><b id="birdTitle">OBJETIVO PRONTO</b><small id="birdText"></small></div></div>
@@ -2270,14 +2312,15 @@ function playHand(id, sourceEl=null){
   // Toda construção criada/jogada pertence a AMBIENTE / EVENTOS.
   if(card.struct){ return buildConstructionFromHand(handIndex); }
 
-  if(id==="map"){ if(isNight()&&!equippedItems("hands").includes("flashlight")){ return useMapCard(); } S.hand.splice(handIndex,1); S.actions--; return useMapCard(); }
-  if(id==="book"){ S.hand.splice(handIndex,1); S.actions--; return useBookCard(); }
+  if(id==="map"){ if(S.stars<cost){log("🚫 "+card.n+" custa ⭐"+cost+" e você tem ⭐"+S.stars+".");render();return false;} if(isNight()&&!equippedItems("hands").includes("flashlight")){ return useMapCard(); } S.stars-=cost; S.hand.splice(handIndex,1); S.actions--; return useMapCard(); }
+  if(id==="book"){ if(S.stars<cost){log("🚫 "+card.n+" custa ⭐"+cost+" e você tem ⭐"+S.stars+".");render();return false;} S.stars-=cost; S.hand.splice(handIndex,1); S.actions--; return useBookCard(); }
 
   if(card.equipable){
     if(!canEquip(id)){log("🧍 O slot de "+(card.slot||"equipamento")+" está cheio. Retire um item equipado antes de usar esta carta.");render();return false}
     if(S.actions<=0){log("⏱️ Equipar exige 1 ação.");render();return false}
+    if(S.stars<cost){log("🚫 "+card.n+" não pode ser equipada: custa ⭐"+cost+" e você tem ⭐"+S.stars+".");render();return false}
     const sourceRect=sourceEl?.getBoundingClientRect?.() || $("hand")?.getBoundingClientRect?.();
-    S.hand.splice(handIndex,1);S.actions--;ensureEquipmentState();S.equipment[card.slot].push(id);S.selected=null;
+    S.stars-=cost; S.hand.splice(handIndex,1);S.actions--;ensureEquipmentState();S.equipment[card.slot].push(id);S.selected=null;
     log("🧍 "+card.n+" equipado no personagem. Não ocupa espaço do acampamento.");render();
     requestAnimationFrame(()=>renderCharacter());
     if(sourceRect)animateFlyRects(sourceRect,$("characterPanel")?.getBoundingClientRect?.(),id);
@@ -3188,7 +3231,7 @@ function buyMap(cost){
   purgeDiscoveredFromDeck();closeModal();log("🗺️ Mapa adquirido por ⭐"+cost+". Use a carta para revelar os objetivos.");render();
 }
 
-function init(){
+function init(resetDeck=true){
   if(!S.areaMaps)S.areaMaps={forest:false,grove:false,cache:false};
   if(!S.areaMapUses)S.areaMapUses={forest:0,grove:0,cache:0};
   // Normalização: nunca permita coexistência de uma estrutura base e sua evolução.
@@ -3200,14 +3243,22 @@ function init(){
   // Migração: construções antigas que ainda estiverem no campo passam para AMBIENTE / EVENTOS.
   if(Array.isArray(S.field)){const oldStructures=S.field.filter(x=>C[x?.id]?.struct);S.field=S.field.filter(x=>!C[x?.id]?.struct);oldStructures.forEach(x=>{const c=C[x.id];S.events.unshift({kind:"structure",id:"structure_"+x.id+"_migrated_"+Math.random().toString(36).slice(2),structureId:x.id,title:c.n,desc:c.d,icon:c.i,weather:"stable",round:S.round,value:x.value||c.cost||1,level:x.level||1,materials:x.materials||[x.id],max:x.max||c.baseRes||5,hp:x.hp??x.max??c.baseRes??5,protection:x.protection||""});});S.events=S.events.slice(0,5);}
 
-  S.timeOfDay="day";schedulePhase(true);
-  S.deck=shuffle(DECK);S.modDeck=shuffle(MOD_DECK);
-  S.hand=[];
-  S.modHand=S.modDeck.pop();
-  log("🎒 Expedição iniciada com ⭐5. A mão começa vazia; o inventário só ocupa espaço quando você guardar uma carta.");
-  log("📌 Você tem 2 movimentos. A primeira compra da rodada é gratuita; a segunda custa ⭐1 + 1 movimento.");
-  log("🌧️ O clima muda quando um modificador é ativado. O cenário também muda de cor.");
-  log("⚡ Duas cartas iguais no campo podem ser combinadas sem gastar ação.");
+  if(resetDeck){
+    S.timeOfDay="day";schedulePhase(true);
+    S.deck=shuffle(DECK);S.modDeck=shuffle(MOD_DECK);
+    S.hand=[];
+    S.modHand=S.modDeck.pop();
+    log("🎒 Expedição iniciada com ⭐5. A mão começa vazia; o inventário só ocupa espaço quando você guardar uma carta.");
+    log("📌 Você tem 2 movimentos. A primeira compra da rodada é gratuita; a segunda custa ⭐1 + 1 movimento.");
+    log("🌧️ O clima muda quando um modificador é ativado. O cenário também muda de cor.");
+    log("⚡ Duas cartas iguais no campo podem ser combinadas sem gastar ação.");
+  }else{
+    if(!Array.isArray(S.deck))S.deck=[];
+    if(!Array.isArray(S.modDeck))S.modDeck=[];
+    if(!Array.isArray(S.hand))S.hand=[];
+    if(S.modHand===undefined)S.modHand=null;
+    if(!S.nextPhaseAt) schedulePhase(false);
+  }
   render()
 }
 
@@ -3294,6 +3345,9 @@ const TUTORIAL_STEPS=[
  {t:'3. COMBINAÇÕES',h:'Dois básicos criam um reforçado',b:'Itens reforçados <strong>não são comprados diretamente</strong>. Combine duas cartas básicas iguais no campo para criar sua versão reforçada. Ex.: <strong>2 Cordas → Corda Reforçada</strong>.'},
  {t:'4. MAPA E OBJETIVOS',h:'Descubra a expedição',b:'Os <strong>OBJETIVOS</strong> ficam em uma janela própria. O Mapa revela a expedição e, quando um objetivo estiver pronto, um <strong>pássaro</strong> avisa que ele pode ser finalizado. À noite, <strong>Mapa + Lanterna</strong> também permitem consultar os objetivos.'},
  {t:'5. MODIFICADORES',h:'Revele o clima quando decidir',b:'O modificador comprado fica <strong>oculto na sua mão</strong>. Clique em <strong>ATIVAR</strong> para revelar e aplicar seu efeito. Você mantém apenas 1 modificador e pode trocar após 2 rodadas gratuitamente ou pagar o custo do novo modificador para trocar imediatamente.'},
+ {t:'6. CUSTO DAS CARTAS',h:'Cada carta exige estrelas',b:'Cada carta possui um custo próprio em <strong>⭐ estrelas</strong>. Para jogar, você precisa ter estrelas suficientes. Ao jogar a carta, o custo é <strong>retirado do seu total</strong>. Ex.: <strong>Corda custa ⭐2</strong>, então jogar uma Corda consome 2 estrelas e 1 movimento.'},
+ {t:'7. DECK E EMBARALHAMENTO',h:'Inspecione e reorganize os decks',b:'Clique no <strong>Deck de Cartas</strong> ou <strong>Modificadores</strong> para inspecionar as cartas. Você pode interagir visualmente sem mudar a ordem real. O embaralhamento manual tem intervalo de <strong>5 rodadas</strong> e custo crescente em estrelas.'},
+ {t:'8. SESSÃO E PROGRESSO',h:'Sua expedição fica salva por usuário',b:'Cada usuário possui uma <strong>sessão local</strong> e um save separado neste navegador. O progresso é salvo automaticamente durante a partida e pode ser retomado depois.'},
  {t:'6. MODOS',h:'Aventura ou Sobrevivência',b:'Fome e sede caem principalmente durante esforço físico. Consumíveis recuperam necessidades. Estrelas têm um teto para evitar acúmulo exagerado. Reparar, trocar, vender e desmontar são ferramentas de recuperação.'},
  {t:'7. CONTROLES',h:'ESC pausa e Autogame observa',b:'<strong>ESC</strong> pausa a expedição. <strong>TAB</strong> abre os mapas. <strong>CAPS LOCK</strong> destaca o personagem. O botão <strong>🤖 AUTOGAME</strong> executa decisões automaticamente para você acompanhar a partida.'},
  {t:'7. CONTROLES',h:'Atalhos rápidos da expedição',b:'Pressione <strong>TAB</strong> para abrir os mapas da expedição. Pressione <strong>CAPS LOCK</strong> para localizar e destacar a tela do personagem. A Bússola equipada ou guardada na mochila revela mapas de coleta; as ferramentas necessárias permitem explorar cada área.'}
@@ -3311,19 +3365,37 @@ function startMode(mode){
   tutorialIndex=0;
   $('modeModal').classList.remove('show');
   $('gameApp').style.display='';const diff=mode==='survival'?Math.min(8,Number(localStorage.getItem('desbravadores_survival_runs')||0)):0;S={round:1,actions:2,stars:5,nextStars:5,roundStarBonus:0,drawsThisRound:0,paidDraws:0,mode,difficulty:diff,survivalRun:diff,resources:{wood:0,fiber:0,fabric:0,metal:0,water:0,food:0,fuel:0,medicine:0,fruit:0,seeds:0,clay:0,bamboo:0},resourceFocus:'wood',collectedThisRound:false,hunger:100,thirst:100,health:100,canteenWater:100,spoilage:{},freshness:{},itemDurability:{},runtimeLastTick:Date.now(),timeOfDay:"day",nextPhaseAt:0,phaseDuration:30000,deck:[],hand:[],field:[],grave:[],modDeck:[],modHand:null,mods:[],completed:[],selected:null,notified:new Set(),readyObjectiveNotified:new Set(),freeDraw:true,gameOver:false,weather:'stable',inventory:[],backpackStorage:[],equipment:{head:[],torso:[],legs:[],back:[],hands:[],waist:[],accessory:[],feet:[],weapon:[]},idleRounds:0,effortThisRound:false,events:[],activeEvent:null,victory:false,firstObjective:null,inventoryShuffleDone:false,paidDraws:0,modLastChangeRound:0,modFreeChangeRound:0,mapDiscovered:false,bookDiscovered:false,areaMaps:{forest:false,grove:false,cache:false},areaMapUses:{forest:0,grove:0,cache:0},campCompleted:false,duelUnlocked:false,advancedMapsUnlocked:false,paused:false,autoGame:false,reshuffleCount:0,lastReshuffleRound:-999,duelStats:{wins:0,losses:0}};if(mode==='survival'){const runs=diff+1;localStorage.setItem('desbravadores_survival_runs',String(runs));}initJournalControls();
-init();log(mode==='survival'?'⛈️ Sobrevivência nível '+diff+' iniciada.':'🧭 Modo Aventura iniciado.');setTimeout(openAdventureTutorial,450)}
+init();saveUserProgress();log(mode==='survival'?'⛈️ Sobrevivência nível '+diff+' iniciada.':'🧭 Modo Aventura iniciado.');saveUserProgress();setTimeout(openAdventureTutorial,450)}
+let ACTIVE_USER=null;
+const AUTH_USERS_KEY='desbravadores_accounts_v1';
+const AUTH_SESSION_KEY='desbravadores_session_user_v1';
+function authUsers(){try{return JSON.parse(localStorage.getItem(AUTH_USERS_KEY)||'{}')}catch(_){return {}}}
+async function hashPassword(value){const data=new TextEncoder().encode(value);const hash=await crypto.subtle.digest('SHA-256',data);return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('')}
+function userSaveKey(user){return 'desbravadores_save_v1_'+encodeURIComponent(user.toLowerCase())}
+function serializeState(){const replacer=(k,v)=>v instanceof Set?[...v]:v;return JSON.stringify(S,replacer)}
+function saveUserProgress(){if(!ACTIVE_USER||!S||!S.round)return;try{localStorage.setItem(userSaveKey(ACTIVE_USER),serializeState())}catch(e){console.warn('Save local falhou',e)}}
+function reviveState(raw){try{const x=JSON.parse(raw);['notified','readyObjectiveNotified'].forEach(k=>x[k]=new Set(Array.isArray(x[k])?x[k]:[]));x.runtimeLastTick=Date.now();x.nextPhaseAt=Number(x.nextPhaseAt)||0;return x}catch(_){return null}}
+function hasSavedProgress(user=ACTIVE_USER){return !!user&&!!localStorage.getItem(userSaveKey(user))}
+function savedProgressSummary(user=ACTIVE_USER){if(!user)return '';const raw=localStorage.getItem(userSaveKey(user));if(!raw)return '';const x=reviveState(raw);return x?`Modo ${x.mode==='survival'?'Sobrevivência':'Aventura'} • Rodada ${x.round||1} • ⭐${x.stars??0}`:''}
+function updateContinueUI(){const has=hasSavedProgress();const text=savedProgressSummary();for(const id of ['continueExpeditionText','modeContinueText']){const el=$(id);if(el)el.textContent=text}for(const id of ['continueExpedition','modeContinueBox']){const el=$(id);if(el)el.classList.toggle('show',has)}}
+function showLoginAccount(){const el=$('loginAccountScreen');if(!el)return;el.classList.add('show');el.setAttribute('aria-hidden','false');const user=$('loginAccountUser');if(user&&ACTIVE_USER)user.value=ACTIVE_USER;updateContinueUI();setTimeout(()=>$('loginAccountUser')?.focus(),50)}
+function hideLoginAccount(){const el=$('loginAccountScreen');if(!el)return;el.classList.remove('show');el.setAttribute('aria-hidden','true')}
+async function submitAuth(e){e.preventDefault();const user=($('loginAccountUser')?.value||'').trim().toLowerCase().replace(/[^a-z0-9_.-]/g,'');const pass=$('loginAccountPass')?.value||'';const status=$('loginAccountStatus');if(user.length<3||pass.length<4){if(status)status.textContent='Use pelo menos 3 caracteres no usuário e 4 na senha.';return}const users=authUsers();const digest=await hashPassword(pass);if(users[user]&&users[user]!==digest){if(status)status.textContent='Senha incorreta para este usuário.';return}const isNew=!users[user];if(isNew)users[user]=digest;localStorage.setItem(AUTH_USERS_KEY,JSON.stringify(users));ACTIVE_USER=user;localStorage.setItem(AUTH_SESSION_KEY,user);if(status)status.textContent=isNew?'Conta criada. Sessão iniciada.':'Sessão iniciada.';hideLoginAccount();if(hasSavedProgress(user)){updateContinueUI();showModeSelect()}else{showModeSelect()}}
+function resumeSavedGame(){if(!ACTIVE_USER)return;const raw=localStorage.getItem(userSaveKey(ACTIVE_USER));const restored=reviveState(raw);if(!restored)return;S=restored;hideLoginAccount();$('modeModal').classList.remove('show');$('gameApp').style.display='';initJournalControls();init(false);log('💾 Expedição de '+ACTIVE_USER+' restaurada na rodada '+S.round+'.');render()}
+function logoutUser(){saveUserProgress();ACTIVE_USER=null;localStorage.removeItem(AUTH_SESSION_KEY);$('gameApp').style.display='none';$('modeModal').classList.remove('show');showLoginAccount()}
 function initAuth(){
-  const login=$('loginScreen');
-  if(login) login.classList.add('hidden');
   $('gameApp').style.display='none';
-  showModeSelect();
+  $('modeModal').classList.remove('show');
+  const session=localStorage.getItem(AUTH_SESSION_KEY);
+  if(session&&authUsers()[session])ACTIVE_USER=session;
+  showLoginAccount();
 }
 function generateManualPDF(){
   const data=[
    ['DESBRAVADORES: RPG CARD GAME','Manual do Jogador'],
    ['1. OBJETIVO','Monte um acampamento completo. Reúna recursos, construa estruturas, descubra eventos, sobreviva ao clima e conclua os objetivos da expedição.'],
    ['2. TURNO','Cada rodada oferece 2 ações. O jogador pode jogar cartas, construir, reparar, trocar, vender, desmontar e comprar cartas conforme as regras de cada ação.'],
-   ['3. ESTRELAS','A primeira compra de carta da rodada é gratuita. A segunda compra custa 1 estrela e 1 ação. A reserva de estrelas possui teto para limitar acúmulo. Construções e objetivos podem gerar estrelas de acordo com o poder, respeitando o teto.'],
+   ['3. ESTRELAS','Cada carta possui um custo próprio em estrelas. Jogar uma carta exige ter o custo disponível e retira esse valor do total. A primeira compra de carta da rodada é gratuita. A segunda compra custa 1 estrela e 1 ação. A reserva de estrelas possui teto para limitar acúmulo. Construções e objetivos podem gerar estrelas de acordo com o poder, respeitando o teto.'],
    ['4. MÃO E CAMPO','O campo comporta até 5 cartas. A mão começa com 5 espaços. Mochila e Luvas ampliam a capacidade dentro dos limites do jogo.'],
    ['5. ITENS REFORÇADOS','Itens reforçados somente são criados por combinação de dois itens básicos iguais. Exemplo: 2 Cordas criam 1 Corda Reforçada. O mesmo princípio vale para Lona, Lenha, Alimento e demais pares definidos pelo jogo.'],
    ['6. OBJETIVOS E MAPA','O painel completo de objetivos fica oculto sem um Mapa. O jogador pode receber notificações de descoberta e ver os recursos necessários. Com Mapa, os objetivos ficam visíveis. À noite, Mapa + Lanterna também liberam a consulta.'],
@@ -3345,6 +3417,7 @@ const ADVENTURE_STEPS=[
  {t:'1. COLETA',h:'Escolha um recurso para a rodada',b:'No painel <strong>RECURSOS COLETADOS</strong>, escolha Madeira, Fibras, Tecido, Metal, Água, Alimento, Combustível ou Medicinais. No fim de cada rodada, o foco recebe recursos.'},
  {t:'2. MONTAGEM',h:'Atinja a quantidade e fabrique',b:'Quando os recursos atingirem a receita, clique em <strong>MONTAR</strong>. A montagem usa 1 ação e coloca o item na mão ou na Mochila.'},
  {t:'3. CONSTRUÇÃO',h:'Leve os itens ao acampamento',b:'Jogue cartas no campo para criar sua base. Barraca protege, Fogueira permite cozinhar, Reserva de Água mantém a Unidade abastecida.'},
+ {t:'4. CUSTO DAS CARTAS',h:'Estrelas pagam o custo da carta',b:'Cada carta possui um custo em <strong>⭐ estrelas</strong>. Você precisa ter esse valor disponível para jogar, e o custo é retirado imediatamente. Ex.: Corda = <strong>⭐2</strong> + 1 movimento.'},
  {t:'4. DESMONTE',h:'Recupere parte dos materiais',b:'Construções podem ser desmontadas. Você paga a ação e recupera materiais parcialmente, criando uma decisão entre manter a estrutura ou reaproveitar recursos.'},
  {t:'5. SOBREVIVA',h:'O clima não espera',b:'Chuva, tempestade, fome, sede, noite e desgaste pressionam a expedição. Proteja as estruturas, cozinhe, beba e mantenha o acampamento funcional.'},
  {t:'6. OBJETIVOS',h:'Descubra o que fazer',b:'O Mapa revela os objetivos. Sem Mapa, você recebe pistas e vê os recursos necessários. À noite, Mapa + Lanterna também permitem consultar o painel.'},
@@ -3358,6 +3431,8 @@ $('tutorialClose').onclick=closeTutorial;$('tutorialNext').onclick=handleTutoria
 
 document.addEventListener("mousemove",e=>{const target=e.target.closest("[data-tooltip]");if(target){positionTooltip(e,target.getAttribute("data-tooltip"));}else hideGameTooltip();});
 document.addEventListener("mouseleave",()=>hideGameTooltip(),true);
+setInterval(()=>{try{saveUserProgress();}catch(_){}},2000);
+window.addEventListener("beforeunload",saveUserProgress);
 setInterval(()=>{try{tickRealtimeSystems();const tip=$("gameTooltip");if(tip&&tip.classList.contains("show")){const hovered=document.querySelector(":hover[data-tooltip]");if(hovered)tip.innerHTML=hovered.getAttribute("data-tooltip");}}catch(err){console.warn("Realtime update skipped",err)}},500);
 setInterval(()=>{tickDayNight()},1000);
 setInterval(()=>{try{autoGameStep()}catch(err){console.warn("Autogame timer skipped",err)}},1600);
